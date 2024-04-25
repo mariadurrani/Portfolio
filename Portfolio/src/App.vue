@@ -1,47 +1,50 @@
 <script setup lang="ts">
-import HelloWorld from './components/HelloWorld.vue'
-import TheWelcome from './components/TheWelcome.vue'
+
 </script>
 
 <template>
-  <header>
-    <img alt="Vue logo" class="logo" src="./assets/logo.svg" width="125" height="125" />
-
     <div class="wrapper">
-      <HelloWorld msg="You did it!" />
-    </div>
-  </header>
+        <nav>
+            <a href="#" class="nav">
+                <div class="one"></div>
+                <div class="two"></div>
+                <div class="three"></div>
+            </a>
+        </nav>
 
-  <main>
-    <TheWelcome />
-  </main>
+
+    </div>
 </template>
 
-<style scoped>
-header {
-  line-height: 1.5;
+<style>
+@font-face {
+    font-family: "coolvetica";
+    src: url(/Portfolio/src/fonts/coolvetica/coolvetica\ compressed\ hv.otf);
 }
 
-.logo {
-  display: block;
-  margin: 0 auto 2rem;
+.wrapper {
+    width: 100%;
+    height: 200vh;
+    text-align: center;
+    font-family: "coolvetica";
+    text-transform: uppercase;
 }
 
-@media (min-width: 1024px) {
-  header {
-    display: flex;
-    place-items: center;
-    padding-right: calc(var(--section-gap) / 2);
-  }
+nav div {
+    height: 4px;
+    background-color: rgb(0, 0, 0);
+    margin: 5px 0;
+}
 
-  .logo {
-    margin: 0 2rem 0 0;
-  }
+.nav {
+    width: 7rem;
+    margin: 3rem;
+    float: right;
+}
 
-  header .wrapper {
-    display: flex;
-    place-items: flex-start;
-    flex-wrap: wrap;
-  }
+.one,
+.two,
+.three {
+    width: 50px;
 }
 </style>
