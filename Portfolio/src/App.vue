@@ -1,19 +1,22 @@
 <script setup lang="ts">
+import { RouterLink, RouterView } from 'vue-router'
 
 </script>
 
 <template>
-    <div class="wrapper">
-        <nav>
-            <a href="#" class="nav">
-                <div class="one"></div>
-                <div class="two"></div>
-                <div class="three"></div>
-            </a>
-        </nav>
+    <header>
+        <div class="wrapper">
+            <nav>
+                <RouterLink to="/">Home</RouterLink>
+                <RouterLink to="/work">Work</RouterLink>
+                <RouterLink to="/about">About</RouterLink>
+                <RouterLink to="/contact">Contact</RouterLink>
 
+            </nav>
+        </div>
+    </header>
 
-    </div>
+    <RouterView />
 </template>
 
 <style>
@@ -23,8 +26,6 @@
 }
 
 .wrapper {
-    width: 100%;
-    height: 200vh;
     text-align: center;
     font-family: "coolvetica";
     text-transform: uppercase;
@@ -40,11 +41,5 @@ nav div {
     width: 7rem;
     margin: 3rem;
     float: right;
-}
-
-.one,
-.two,
-.three {
-    width: 50px;
 }
 </style>
