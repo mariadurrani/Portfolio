@@ -5,13 +5,13 @@ import { RouterLink, RouterView } from 'vue-router'
 
 <template>
     <header>
-        <div class="wrapper">
-            <nav>
-                <RouterLink to="/">Home</RouterLink>
-                <RouterLink to="/work">Work</RouterLink>
-                <RouterLink to="/about">About</RouterLink>
-                <RouterLink to="/contact">Contact</RouterLink>
-
+        <div class="router-wrapper">
+            <nav class="navbar">
+                <RouterLink style="text-decoration: none; color: inherit;" to="/">Home
+                </RouterLink>
+                <RouterLink style="text-decoration: none; color: inherit;" to="/work">Work</RouterLink>
+                <RouterLink style="text-decoration: none; color: inherit;" to="/about">About</RouterLink>
+                <RouterLink style="text-decoration: none; color: inherit;" to="/contact">Contact</RouterLink>
             </nav>
         </div>
     </header>
@@ -25,21 +25,16 @@ import { RouterLink, RouterView } from 'vue-router'
     src: url(/Portfolio/src/fonts/coolvetica/coolvetica\ compressed\ hv.otf);
 }
 
-.wrapper {
-    text-align: center;
+.router-wrapper {
     font-family: "coolvetica";
     text-transform: uppercase;
 }
 
-nav div {
-    height: 4px;
-    background-color: rgb(0, 0, 0);
-    margin: 5px 0;
-}
-
-.nav {
-    width: 7rem;
-    margin: 3rem;
-    float: right;
+.navbar {
+    display: flex;
+    justify-content: end;
+    margin: 4rem 10rem;
+    font-size: 3rem;
+    gap: 50px;
 }
 </style>
