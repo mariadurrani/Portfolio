@@ -28,7 +28,7 @@ const titleCareer = "Frontend Developer"
 
 <style>
 .home-wrapper {
-    font-family: "coolvetica";
+    font-family: "RalewayBold";
     text-transform: uppercase;
 }
 
@@ -48,6 +48,8 @@ const titleCareer = "Frontend Developer"
 .leftTitleCareer {
     font-size: 100px;
     width: 20rem;
+    letter-spacing: -2px;
+
 }
 
 .right-container {
@@ -58,7 +60,7 @@ const titleCareer = "Frontend Developer"
     text-align: right;
     color: #1e1e1e;
     margin: 20rem 6rem 0 0;
-
+    letter-spacing: -2px;
 }
 
 .rightFirstName,
@@ -79,7 +81,7 @@ const titleCareer = "Frontend Developer"
 
     .right-container {
         font-size: 25px;
-        margin: 23rem 2rem 0 0;
+        margin: 30rem 2rem 0 0;
     }
 }
 

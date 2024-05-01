@@ -15,6 +15,11 @@
     src: url(../fonts/raleway/Raleway-Regular.ttf);
 }
 
+@font-face {
+    font-family: "RalewayBold";
+    src: url(../fonts/raleway/Raleway-ExtraBold.ttf);
+}
+
 .copyright {
     font-family: "Raleway";
     float: right;
