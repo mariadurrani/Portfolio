@@ -27,10 +27,6 @@ const titleCareer = "Frontend Developer"
 </template>
 
 <style>
-body {
-    background-color: #D4ABB2;
-}
-
 .home-wrapper {
     font-family: "coolvetica";
     text-transform: uppercase;
@@ -39,9 +35,9 @@ body {
 .left-container {
     display: flex;
     flex-direction: column;
-    margin: 4rem 6rem;
+    margin: 4rem 10rem;
     color: #1e1e1e;
-    font-size: 10px;
+    font-size: 20px;
 }
 
 .leftName,
@@ -50,7 +46,7 @@ body {
 }
 
 .leftTitleCareer {
-    font-size: 70px;
+    font-size: 100px;
     width: 20rem;
 }
 
@@ -58,10 +54,10 @@ body {
     display: flex;
     justify-content: end;
     flex-direction: column;
-    font-size: 37px;
+    font-size: 50px;
     text-align: right;
     color: #1e1e1e;
-    margin: 8rem 6rem 0 0;
+    margin: 20rem 6rem 0 0;
 
 }
 
@@ -72,7 +68,7 @@ body {
 
 @media (min-width: 280px) and (max-width: 767px) {
     .left-container {
-        margin: 3rem 2rem;
+        margin: 4rem 2rem;
         font-size: 12px;
     }
 
@@ -83,7 +79,7 @@ body {
 
     .right-container {
         font-size: 25px;
-        margin: 25rem 1rem;
+        margin: 23rem 2rem 0 0;
     }
 }
 
@@ -93,49 +89,47 @@ body {
     }
 
     .leftTitleCareer {
-        font-size: 65px;
+        font-size: 60px;
         width: 20rem;
     }
 
 
     .right-container {
-        font-size: 35px;
-        margin: 22rem 4rem;
+        font-size: 32px;
+        margin: 33rem 4rem 0 0;
     }
 
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
     .left-container {
-        margin: 7rem 7rem;
+        margin: 7rem 6rem;
     }
 
     .leftTitleCareer {
-        font-size: 70px;
+        font-size: 65px;
         width: 20rem;
     }
 
     .right-container {
-        font-size: 38px;
-        margin: 22rem 7rem;
+        font-size: 33px;
+        margin: 25rem 6rem 0 0;
     }
 }
 
-@media (min-width: 1900px) {
-
+@media (min-width: 1281px) and (max-width: 1899px) {
     .left-container {
-        font-size: 20px;
+        margin: 7rem 6rem;
     }
 
     .leftTitleCareer {
-        font-size: 100px;
+        font-size: 75px;
         width: 20rem;
     }
 
     .right-container {
-        font-size: 50px;
-        margin: 22rem 7rem;
-
+        font-size: 40px;
+        margin: 26rem 6rem 0 0;
     }
 }
 </style>

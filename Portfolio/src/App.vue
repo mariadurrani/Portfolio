@@ -28,6 +28,10 @@ import { RouterLink, RouterView } from 'vue-router'
 </template>
 
 <style>
+body {
+    background-color: #D4ABB2;
+}
+
 @font-face {
     font-family: "coolvetica";
     src: url(/Portfolio/src/fonts/coolvetica/coolvetica\ compressed\ hv.otf);
@@ -41,9 +45,9 @@ import { RouterLink, RouterView } from 'vue-router'
 .navbar {
     display: flex;
     justify-content: end;
-    margin: 3rem 5rem;
-    font-size: 25px;
-    gap: 50px;
+    margin: 4rem 5rem;
+    font-size: 43px;
+    gap: 60px;
 }
 
 @media (min-width: 280px) and (max-width: 767px) {
@@ -70,7 +74,7 @@ import { RouterLink, RouterView } from 'vue-router'
     .navbar {
         justify-content: center;
         align-items: center;
-        font-size: 33px;
+        font-size: 28px;
         gap: 50px;
     }
 }
@@ -79,17 +83,13 @@ import { RouterLink, RouterView } from 'vue-router'
     .navbar {
         justify-content: center;
         align-items: center;
-        font-size: 35px;
-        gap: 60px;
+        font-size: 30px;
     }
 }
 
-@media (min-width: 1900px) {
+@media (min-width: 1281px) and (max-width: 1899px) {
     .navbar {
-        font-size: 43px;
-        gap: 60px;
-        margin: 4rem 5rem;
-
+        font-size: 35px;
     }
 }
 </style>
