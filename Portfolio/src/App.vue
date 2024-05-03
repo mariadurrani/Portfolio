@@ -2,21 +2,18 @@
 import { ref } from 'vue';
 import { RouterLink, RouterView } from 'vue-router'
 import Copyright from "../src/components/Copyright.vue"
+import { homeViewContent } from './views/home-view-content';
 
 const isMenuShown = ref(false)
 
-const firstName = "Maria"
-const lastName = "Durrani"
 
 </script>
 
 <template>
     <header>
         <div class="router-wrapper">
-
             <button @click="isMenuShown = !isMenuShown" class="menuButton">
-                <div class=" line">
-                </div>
+                <div class="line"></div>
                 <div class="line"></div>
                 <div class="line"></div>
             </button>
@@ -59,11 +56,11 @@ const lastName = "Durrani"
             </li>
         </ul>
 
-        <div class="right-containerr">
-            <h1 class="rightFirstName">{{ firstName }}</h1>
-            <h1 class="rightLastName">{{ lastName }}</h1>
-            <Copyright />
+        <div class="menu-fullName">
+            <h1 class="menu-firstName">{{ homeViewContent.firstName }}</h1>
+            <h1 class="menu-lastName">{{ homeViewContent.lastName }}</h1>
         </div>
+
 
 
     </div>
@@ -72,17 +69,29 @@ const lastName = "Durrani"
 </template>
 
 <style>
+html,
 body {
     background-color: #D4ABB2;
+    font-family: "Raleway";
+    text-transform: uppercase;
 }
 
 .menuButton {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     background-color: transparent;
     border: none;
+    z-index: 1000;
+    margin: 1rem 20rem;
 }
+
+.line {
+    width: 55px;
+    height: 3px;
+    background-color: black;
+    margin: 3px;
+}
+
 
 .router-wrapper {
     font-family: "Raleway";
@@ -91,7 +100,7 @@ body {
 
 .navbar {
     display: flex;
-    justify-content: end;
+    justify-content: flex-end;
     margin: 4rem 5rem;
     font-size: 43px;
     gap: 60px;
@@ -103,19 +112,12 @@ body {
         display: none;
     }
 
-    .line {
-        width: 55px;
-        height: 3px;
-        background-color: black;
-        margin: 3px;
-    }
-
     .openedMenu {
 
         background-color: #D4ABB2;
         color: #ffff;
-        margin: 30px;
         position: fixed;
+        margin: 40px;
         width: 100%;
         height: 100%;
         top: 0;
@@ -136,14 +138,19 @@ body {
         list-style: none;
     }
 
-    .right-containerr {
-        font-size: 25px;
-        color: #ffff;
-        text-align: right;
-        margin: 12rem 4rem;
+    .menu-fullName {
+        display: flex;
+        flex-direction: column;
+        align-items: flex-end;
+        font-size: 22px;
+        color: #ffffffa4;
+        margin: 3rem 2rem;
     }
 
-    .menuCopyright {}
+    .menu-firstName,
+    .menu-lastName {
+        margin: 0;
+    }
 
 }
 

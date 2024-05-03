@@ -1,102 +1,99 @@
 <script setup lang="ts">
 import Copyright from "../components/Copyright.vue"
+import { homeViewContent } from "./home-view-content";
 
-const firstName = "Maria"
-const lastName = "Durrani"
-const titleCareer = "Frontend Developer"
+
 
 </script>
 
 <template>
+    <!-- default layout -->
     <header class="home-wrapper">
-        <main>
-            <div class="left-container">
-                <h2 class="leftName">{{ firstName }}</h2>
-                <h1 class="leftTitleCareer">{{ titleCareer }}</h1>
-            </div>
-            <div class="right-container">
-                <h1 class="rightFirstName">{{ firstName }}</h1>
-                <h1 class="rightLastName">{{ lastName }}</h1>
-            </div>
-        </main>
+        <div class="homepage-leftcontainer">
+            <h2 class="home-smallName">{{ homeViewContent.firstName }}</h2>
+            <h1 class="homepage-title">{{ homeViewContent.titleCareer }}</h1>
+        </div>
+        <div class="homepage-rightcontainer">
+            <h1 class="home-firstName">{{ homeViewContent.firstName }}</h1>
+            <h1 class="home-lastName">{{ homeViewContent.lastName }}</h1>
+        </div>
     </header>
-    <footer>
-        <Copyright />
-    </footer>
-
+    <!-- default layout -->
 </template>
 
 <style>
 .home-wrapper {
-    font-family: "RalewayBold";
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 65vh;
+    font-family: "Raleway";
     text-transform: uppercase;
 }
 
-.left-container {
+
+.homepage-leftcontainer {
     display: flex;
     flex-direction: column;
-    margin: 4rem 10rem;
     color: #1e1e1e;
     font-size: 20px;
+    padding: 0 4rem;
+
 }
 
-.leftName,
-.leftTitleCareer {
+.home-smallName,
+.homepage-title {
     margin: 0;
 }
 
-.leftTitleCareer {
+.homepage-title {
     font-size: 100px;
     width: 20rem;
     letter-spacing: -2px;
 
 }
 
-.right-container {
+.homepage-rightcontainer {
     display: flex;
-    justify-content: end;
     flex-direction: column;
     font-size: 50px;
-    text-align: right;
     color: #1e1e1e;
-    margin: 20rem 6rem 0 0;
     letter-spacing: -2px;
+    align-self: flex-end;
+    padding: 0 4rem;
 }
 
-.rightFirstName,
-.rightLastName {
+.home-firstName,
+.home-lastName {
     margin: 0;
 }
 
 @media (min-width: 280px) and (max-width: 767px) {
-    .left-container {
+    .homepage-leftcontainer {
         margin: 4rem 2rem;
-        font-size: 12px;
     }
 
-    .leftTitleCareer {
+    .homepage-title {
         font-size: 45px;
-        width: 20rem;
     }
 
-    .right-container {
+    .homepage-rightcontainer {
         font-size: 25px;
-        margin: 30rem 2rem 0 0;
     }
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .left-container {
+    .homepage-leftcontainer {
         margin: 7rem 4rem;
     }
 
-    .leftTitleCareer {
+    .homepage-title {
         font-size: 60px;
         width: 20rem;
     }
 
 
-    .right-container {
+    .homepage-rightcontainer {
         font-size: 32px;
         margin: 33rem 4rem 0 0;
     }
@@ -104,32 +101,32 @@ const titleCareer = "Frontend Developer"
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-    .left-container {
+    .homepage-leftcontainer {
         margin: 7rem 6rem;
     }
 
-    .leftTitleCareer {
+    .homepage-title {
         font-size: 65px;
         width: 20rem;
     }
 
-    .right-container {
+    .homepage-rightcontainer {
         font-size: 33px;
         margin: 25rem 6rem 0 0;
     }
 }
 
 @media (min-width: 1281px) and (max-width: 1899px) {
-    .left-container {
+    .homepage-leftcontainer {
         margin: 7rem 6rem;
     }
 
-    .leftTitleCareer {
+    .homepage-title {
         font-size: 75px;
         width: 20rem;
     }
 
-    .right-container {
+    .homepage-rightcontainer {
         font-size: 40px;
         margin: 26rem 6rem 0 0;
     }
