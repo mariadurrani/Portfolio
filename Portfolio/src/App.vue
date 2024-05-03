@@ -15,10 +15,10 @@ const lastName = "Durrani"
         <div class="router-wrapper">
 
             <button @click="isMenuShown = !isMenuShown" class="menuButton">
-                <div class=" line">
+                <div class="line" :class="{ 'whiteLine': isMenuShown }">
                 </div>
-                <div class="line"></div>
-                <div class="line"></div>
+                <div class="line" :class="{ 'whiteLine': isMenuShown }"></div>
+                <div class="line" :class="{ 'whiteLine': isMenuShown }"></div>
             </button>
 
             <nav>
@@ -79,9 +79,12 @@ body {
 .menuButton {
     display: flex;
     flex-direction: column;
-    justify-content: flex-end;
     background-color: transparent;
     border: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
 }
 
 .router-wrapper {
@@ -98,6 +101,10 @@ body {
     list-style: none;
 }
 
+.openedMenu {
+    display: none;
+}
+
 @media (min-width: 280px) and (max-width: 767px) {
     .navbar {
         display: none;
@@ -110,8 +117,12 @@ body {
         margin: 3px;
     }
 
-    .openedMenu {
+    .whiteLine {
+        background-color: #ffff;
+    }
 
+    .openedMenu {
+        display: block;
         background-color: #D4ABB2;
         color: #ffff;
         margin: 30px;
