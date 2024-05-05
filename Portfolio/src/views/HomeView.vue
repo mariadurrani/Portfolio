@@ -23,10 +23,6 @@ import { homeViewContent } from "./home-view-content";
 
 <style>
 .home-wrapper {
-    display: flex;
-    justify-content: space-between;
-    width: 100%;
-    height: 65vh;
     font-family: "Raleway";
     text-transform: uppercase;
 }
@@ -37,8 +33,6 @@ import { homeViewContent } from "./home-view-content";
     flex-direction: column;
     color: #1e1e1e;
     font-size: 20px;
-    padding: 0 4rem;
-
 }
 
 .home-smallName,
@@ -48,7 +42,7 @@ import { homeViewContent } from "./home-view-content";
 
 .homepage-title {
     font-size: 100px;
-    width: 20rem;
+    width: 15rem;
     letter-spacing: -2px;
 
 }
@@ -60,7 +54,7 @@ import { homeViewContent } from "./home-view-content";
     color: #1e1e1e;
     letter-spacing: -2px;
     align-self: flex-end;
-    padding: 0 4rem;
+    text-align: right;
 }
 
 .home-firstName,
@@ -68,34 +62,45 @@ import { homeViewContent } from "./home-view-content";
     margin: 0;
 }
 
+
 @media (min-width: 280px) and (max-width: 767px) {
     .homepage-leftcontainer {
-        margin: 4rem 2rem;
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin-top: 8rem;
     }
 
     .homepage-title {
-        font-size: 45px;
+        font-size: 49px;
     }
 
     .homepage-rightcontainer {
         font-size: 25px;
+        justify-content: center;
+        margin-top: 5rem;
+        align-items: center;
     }
+
+    .home-smallName {
+        font-size: 20px;
+    }
+
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-    .homepage-leftcontainer {
-        margin: 7rem 4rem;
+    .home-wrapper {
+        padding: 10px;
     }
 
     .homepage-title {
         font-size: 60px;
-        width: 20rem;
     }
 
 
     .homepage-rightcontainer {
         font-size: 32px;
-        margin: 33rem 4rem 0 0;
     }
 
 }

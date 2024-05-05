@@ -6,16 +6,16 @@ import { homeViewContent } from './views/home-view-content';
 
 const isMenuShown = ref(false)
 
-
 </script>
 
 <template>
     <header>
         <div class="router-wrapper">
             <button @click="isMenuShown = !isMenuShown" class="menuButton">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
+                <div class="line" :class="{ 'whiteLine': isMenuShown }">
+                </div>
+                <div class="line" :class="{ 'whiteLine': isMenuShown }"></div>
+                <div class="line" :class="{ 'whiteLine': isMenuShown }"></div>
             </button>
 
             <nav>
@@ -39,31 +39,32 @@ const isMenuShown = ref(false)
         </div>
     </header>
 
-    <div v-if="isMenuShown" class="openedMenu" style="font-family: 'RalewayBold'; text-transform: uppercase;">
+    <div v-if="isMenuShown" class="openedMenu" style=" text-transform: uppercase;">
         <ul class="menu-links">
             <li>
-                <RouterLink style="text-decoration: none; color: #ffff; ;" to="/">Home
+                <RouterLink to="/">Home
                 </RouterLink>
             </li>
             <li>
-                <RouterLink style="text-decoration: none; color: #ffff; " to="/work">Work</RouterLink>
+                <RouterLink to="/work">Work</RouterLink>
             </li>
             <li>
-                <RouterLink style="text-decoration: none; color: #ffff;" to="/about">About</RouterLink>
+                <RouterLink to=" /about">About</RouterLink>
             </li>
             <li>
-                <RouterLink style="text-decoration: none; color: #ffff;" to="/contact">Contact</RouterLink>
+                <RouterLink to="/contact">Contact</RouterLink>
             </li>
         </ul>
 
-        <div class="menu-fullName">
-            <h1 class="menu-firstName">{{ homeViewContent.firstName }}</h1>
-            <h1 class="menu-lastName">{{ homeViewContent.lastName }}</h1>
+        <div class="menu-fullname">
+            <h1 class="menu-FirstName">{{ homeViewContent.firstName }}</h1>
+            <h1 class="menu-LastName">{{ homeViewContent.lastName }}</h1>
         </div>
-
-
-
     </div>
+
+    <!-- <footer>
+        <Copyright />
+    </footer> -->
 
     <RouterView />
 </template>
@@ -73,7 +74,6 @@ html,
 body {
     background-color: #D4ABB2;
     font-family: "Raleway";
-    text-transform: uppercase;
 }
 
 .menuButton {
@@ -81,17 +81,11 @@ body {
     flex-direction: column;
     background-color: transparent;
     border: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
     z-index: 1000;
-    margin: 1rem 20rem;
 }
-
-.line {
-    width: 55px;
-    height: 3px;
-    background-color: black;
-    margin: 3px;
-}
-
 
 .router-wrapper {
     font-family: "Raleway";
@@ -100,24 +94,40 @@ body {
 
 .navbar {
     display: flex;
-    justify-content: flex-end;
+    justify-content: end;
     margin: 4rem 5rem;
     font-size: 43px;
     gap: 60px;
     list-style: none;
 }
 
+.openedMenu {
+    display: none;
+}
+
+
 @media (min-width: 280px) and (max-width: 767px) {
     .navbar {
         display: none;
     }
 
-    .openedMenu {
+    .line {
+        width: 55px;
+        height: 3px;
+        background-color: black;
+        margin: 3px;
+    }
 
+    .whiteLine {
+        background-color: #ffff;
+    }
+
+    .openedMenu {
+        display: block;
         background-color: #D4ABB2;
         color: #ffff;
+        margin: 0px;
         position: fixed;
-        margin: 40px;
         width: 100%;
         height: 100%;
         top: 0;
@@ -138,20 +148,17 @@ body {
         list-style: none;
     }
 
-    .menu-fullName {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        font-size: 22px;
-        color: #ffffffa4;
-        margin: 3rem 2rem;
+    .menu-links a {
+        text-decoration: none;
+        color: #ffff;
     }
 
-    .menu-firstName,
-    .menu-lastName {
-        margin: 0;
+    .menu-fullname {
+        font-size: 25px;
+        color: #ffff;
+        text-align: right;
+        margin: 12rem 4rem;
     }
-
 }
 
 
@@ -162,6 +169,8 @@ body {
         font-size: 28px;
         gap: 50px;
     }
+
+
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
