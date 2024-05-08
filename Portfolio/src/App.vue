@@ -24,17 +24,17 @@ const isMenuShown = ref(false)
                 <nav>
                     <ul class="navbar">
                         <li>
-                            <RouterLink style="text-decoration: none; color: #1e1e1e; ;" to="/">Home
+                            <RouterLink to="/">Home
                             </RouterLink>
                         </li>
                         <li>
-                            <RouterLink style="text-decoration: none; color: #1e1e1e; " to="/work">Work</RouterLink>
+                            <RouterLink to="/work">Work</RouterLink>
                         </li>
                         <li>
-                            <RouterLink style="text-decoration: none; color: #1e1e1e;" to="/about">About</RouterLink>
+                            <RouterLink to=" /about">About</RouterLink>
                         </li>
                         <li>
-                            <RouterLink style="text-decoration: none; color: #1e1e1e;" to="/contact">Contact
+                            <RouterLink to="/contact">Contact
                             </RouterLink>
                         </li>
                     </ul>
@@ -103,6 +103,11 @@ body {
     font-size: 25px;
     gap: 60px;
     list-style: none;
+}
+
+.navbar li a {
+    text-decoration: none;
+    color: #1e1e1e;
 }
 
 .openedMenu {

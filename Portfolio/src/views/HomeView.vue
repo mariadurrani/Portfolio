@@ -11,13 +11,13 @@ import { homeViewContent } from "./home-view-content";
 
         <!-- default layout -->
         <header class="home-wrapper">
-            <div class="homepage-leftcontainer">
-                <h2 class="home-smallName">{{ homeViewContent.firstName }}</h2>
-                <h1 class="homepage-title">{{ homeViewContent.titleCareer }}</h1>
+            <div class="home-page-left-container">
+                <h2 class="home-page-small-name">{{ homeViewContent.firstName }}</h2>
+                <h1 class="home-page-title">{{ homeViewContent.titleCareer }}</h1>
             </div>
-            <div class="homepage-rightcontainer">
-                <h1 class="home-firstName">{{ homeViewContent.firstName }}</h1>
-                <h1 class="home-lastName">{{ homeViewContent.lastName }}</h1>
+            <div class="home-page-right-container">
+                <h1 class="home-page-firstName">{{ homeViewContent.firstName }}</h1>
+                <h1 class="home-page-lastName">{{ homeViewContent.lastName }}</h1>
             </div>
         </header>
         <!-- default layout -->
@@ -33,7 +33,7 @@ import { homeViewContent } from "./home-view-content";
 
 }
 
-.homepage-leftcontainer {
+.home-page-left-container {
     display: flex;
     flex-direction: column;
     color: #1e1e1e;
@@ -42,17 +42,17 @@ import { homeViewContent } from "./home-view-content";
 
 }
 
-.home-smallName,
-.homepage-title {
+.home-page-small-name,
+.home-page-title {
     margin: 0;
 }
 
-.homepage-title {
+.home-page-title {
     font-size: 100px;
     width: 15rem;
 }
 
-.homepage-rightcontainer {
+.home-page-right-container {
     display: flex;
     flex-direction: column;
     font-size: 50px;
@@ -63,32 +63,32 @@ import { homeViewContent } from "./home-view-content";
 
 }
 
-.home-firstName,
-.home-lastName {
+.home-page-firstName,
+.home-page-lastName {
     margin: 0;
 }
 
 @media (min-width: 280px) and (max-width: 767px) {
-    .homepage-leftcontainer {
+    .home-page-left-container {
         display: flex;
         flex-direction: column;
         align-items: center;
     }
 
-    .homepage-title {
+    .home-page-title {
         font-size: 40px;
         justify-content: center;
         align-items: center;
         text-align: center;
     }
 
-    .homepage-rightcontainer {
+    .home-page-rightcontainer {
         font-size: 20px;
         justify-content: center;
         align-items: center;
     }
 
-    .home-smallName {
+    .home-page-small-name {
         font-size: 20px;
     }
 }
@@ -98,45 +98,45 @@ import { homeViewContent } from "./home-view-content";
         padding: 10px;
     }
 
-    .homepage-title {
+    .home-page-title {
         font-size: 60px;
     }
 
-    .homepage-rightcontainer {
+    .home-page-right-container {
         font-size: 32px;
     }
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
 
-    .homepage-title {
+    .home-page-title {
         font-size: 65px;
         width: 20rem;
     }
 
-    .homepage-rightcontainer {
+    .home-page-right-container {
         font-size: 33px;
     }
 }
 
 @media (min-width: 1281px) and (max-width: 1899px) {
 
-    .homepage-leftcontainer {
+    .home-page-left-container {
         margin-top: 5rem;
     }
 
-    .homepage-title {
+    .home-page-title {
         font-size: 75px;
         width: 20rem;
     }
 
-    .homepage-rightcontainer {
+    .home-page-right-container {
         font-size: 40px;
     }
 }
 
 @media (min-width: 1900px) {
-    .homepage-rightcontainer {
+    .home-page-right-container {
         margin-top: 15rem;
     }
 
