@@ -4,62 +4,45 @@
   letter-spacing: -2px;
 }
 
-.homepage-leftcontainer {
+.home-page-left-container {
   display: flex;
   flex-direction: column;
+  align-items: center;
   color: #1e1e1e;
   font-size: 20px;
-  margin-top: 5rem;
+  margin-top: 10rem;
 }
 
-.home-smallName,
-.homepage-title {
+.home-page-small-name,
+.home-page-title {
   margin: 0;
 }
 
-.homepage-title {
-  font-size: 100px;
+.home-page-title {
+  font-size: 40px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
   width: 15rem;
 }
 
-.homepage-rightcontainer {
+.home-page-right-container {
+  font-size: 20px;
+  justify-content: center;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  font-size: 50px;
   color: #1e1e1e;
-  align-self: flex-end;
-  text-align: right;
   margin-top: 5rem;
 }
 
-.home-firstName,
-.home-lastName {
+.home-page-firstName,
+.home-page-lastName {
   margin: 0;
 }
 
-@media (min-width: 280px) and (max-width: 767px) {
-  .homepage-leftcontainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-  }
-
-  .homepage-title {
-    font-size: 40px;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-  }
-
-  .homepage-rightcontainer {
-    font-size: 20px;
-    justify-content: center;
-    align-items: center;
-  }
-
-  .home-smallName {
-    font-size: 20px;
-  }
+.home-page-small-name {
+  font-size: 20px;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -67,43 +50,69 @@
     padding: 10px;
   }
 
-  .homepage-title {
+  .home-page-title {
     font-size: 60px;
   }
 
-  .homepage-rightcontainer {
+  .home-page-left-container {
+    align-items: start;
+    margin-top: 5rem;
+  }
+
+  .home-page-right-container {
     font-size: 32px;
+    align-items: flex-end;
   }
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  .homepage-title {
+  .home-page-title {
     font-size: 65px;
-    width: 20rem;
   }
 
-  .homepage-rightcontainer {
+  .home-page-left-container {
+    align-items: start;
+    margin-top: 5rem;
+  }
+
+  .home-page-right-container {
     font-size: 33px;
+    align-items: flex-end;
   }
 }
 
 @media (min-width: 1281px) and (max-width: 1899px) {
-  .homepage-leftcontainer {
-    margin-top: 5rem;
+  .home-page-left-container {
+    margin-top: 1rem;
+    align-items: start;
   }
 
-  .homepage-title {
-    font-size: 75px;
-    width: 20rem;
+  .home-page-title {
+    font-size: 70px;
   }
 
-  .homepage-rightcontainer {
-    font-size: 40px;
+  .home-page-right-container {
+    font-size: 35px;
+    align-items: flex-end;
   }
 }
 
 @media (min-width: 1900px) {
-  .homepage-rightcontainer {
-    margin-top: 15rem;
+  .home-page-left-container {
+    margin-top: 1rem;
+    align-items: start;
+  }
+
+  .home-page-title {
+    font-size: 5rem;
+  }
+  .home-page-right-container {
+    margin-top: 10rem;
+    font-size: 2.5rem;
+    align-items: flex-end;
+  }
+
+  .home-page-small-name {
+    font-size: 30px;
   }
 }

@@ -4,7 +4,8 @@ import { RouterLink, RouterView } from 'vue-router'
 import Copyright from "../src/components/Copyright.vue"
 import { homeViewContent } from './views/home-view-content';
 import Wrapper from "@/Wrapper.vue";
-
+import RouterLinkNav from './components/RouterLinkNav.vue';
+import RouterLinkMenu from './components/RouterLinkMenu.vue';
 
 const isMenuShown = ref(false)
 
@@ -14,189 +15,32 @@ const isMenuShown = ref(false)
     <Wrapper>
         <header>
             <div class="router-wrapper">
-                <button @click="isMenuShown = !isMenuShown" class="menuButton">
-                    <div class="line" :class="{ 'whiteLine': isMenuShown }">
-                    </div>
-                    <div class="line" :class="{ 'whiteLine': isMenuShown }"></div>
-                    <div class="line" :class="{ 'whiteLine': isMenuShown }"></div>
+                <button @click="isMenuShown = !isMenuShown" class="menu-button-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="menu-button">
+                        <path v-if="!isMenuShown"
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                        <path v-else="isMenuShown" fill="#ffffff"
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                    </svg>
                 </button>
 
                 <nav>
-                    <ul class="navbar">
-                        <li>
-                            <RouterLink to="/">Home
-                            </RouterLink>
-                        </li>
-                        <li>
-                            <RouterLink to="/work">Work</RouterLink>
-                        </li>
-                        <li>
-                            <RouterLink to=" /about">About</RouterLink>
-                        </li>
-                        <li>
-                            <RouterLink to="/contact">Contact
-                            </RouterLink>
-                        </li>
-                    </ul>
+                    <RouterLinkNav />
                 </nav>
-
             </div>
         </header>
 
-        <div v-if="isMenuShown" class="openedMenu" style=" text-transform: uppercase;">
-            <ul class="menu-links">
-                <li>
-                    <RouterLink to="/">Home
-                    </RouterLink>
-                </li>
-                <li>
-                    <RouterLink to="/work">Work</RouterLink>
-                </li>
-                <li>
-                    <RouterLink to=" /about">About</RouterLink>
-                </li>
-                <li>
-                    <RouterLink to="/contact">Contact</RouterLink>
-                </li>
-            </ul>
+        <div v-if="isMenuShown" class="opened-menu">
+            <RouterLinkMenu />
 
             <div class="menu-fullname">
                 <h1 class="menu-firstName">{{ homeViewContent.firstName }}</h1>
-                <h1 class="menu-astName">{{ homeViewContent.lastName }}</h1>
+                <h1 class="menu-lastName">{{ homeViewContent.lastName }}</h1>
             </div>
         </div>
-
-        <!-- <footer>
-        <Copyright />
-    </footer> -->
 
         <RouterView />
     </Wrapper>
 </template>
 
-<style>
-html,
-body {
-    background-color: #D4ABB2;
-    font-family: "Raleway";
-}
-
-.menuButton {
-    display: flex;
-    flex-direction: column;
-    background-color: transparent;
-    border: none;
-    position: fixed;
-    top: 20px;
-    right: 20px;
-    z-index: 1000;
-}
-
-.router-wrapper {
-    font-family: "Raleway";
-    text-transform: uppercase;
-}
-
-.navbar {
-    display: flex;
-    justify-content: flex-end;
-    font-size: 25px;
-    gap: 60px;
-    list-style: none;
-}
-
-.navbar li a {
-    text-decoration: none;
-    color: #1e1e1e;
-}
-
-.openedMenu {
-    display: none;
-}
-
-
-@media (min-width: 280px) and (max-width: 767px) {
-    .navbar {
-        display: none;
-
-    }
-
-    .line {
-        width: 55px;
-        height: 3px;
-        background-color: black;
-        margin: 3px;
-    }
-
-    .whiteLine {
-        background-color: #ffff;
-    }
-
-    .openedMenu {
-        display: block;
-        background-color: #D4ABB2;
-        color: #ffff;
-        margin: 0px;
-        position: fixed;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    }
-
-    .menu-links {
-        display: flex;
-        flex-direction: column;
-        font-size: 60px;
-    }
-
-    .menu-links li {
-        margin-top: 20px;
-        padding: 8px;
-        list-style: none;
-    }
-
-    .menu-links a {
-        text-decoration: none;
-        color: #ffff;
-    }
-
-    .menu-fullname {
-        font-size: 25px;
-        color: #ffff;
-        text-align: right;
-        margin: 12rem 4rem;
-    }
-
-    .menu-firstName,
-    .menu-lastName {
-        margin: 0;
-    }
-}
-
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    .navbar {
-        justify-content: center;
-        align-items: center;
-        gap: 50px;
-    }
-
-
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-    .navbar {
-        justify-content: center;
-        align-items: center;
-    }
-}
-
-@media (min-width: 1900px) {
-    .navbar {
-        font-size: 43px;
-    }
-}
-</style>
+<style src="./assets/App.css"></style>
