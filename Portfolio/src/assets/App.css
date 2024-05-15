@@ -1,7 +1,7 @@
 html,
 body {
-  background-color: #d4abb2;
-  font-family: 'Raleway';
+  background-color: #d4abb2; /*  $color-pink-primary */
+  font-family: 'Raleway'; /*  $font-family-primary */
 }
 
 .menu-button-container {
@@ -24,9 +24,9 @@ body {
 .opened-menu {
   display: block;
   text-transform: uppercase;
-  background-color: #d4abb2;
-  color: #ffff;
-  margin: 0px;
+  background-color: #d4abb2; /*  $color-pink-primary */
+  color: #ffff; /* $color-white */
+  margin: 0;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -37,8 +37,8 @@ body {
 }
 
 .menu-fullname {
-  font-size: 25px;
-  color: #ffff;
+  font-size: 1.5rem; /* $font-size-small */
+  color: #ffff; /*  $color-white */
   text-align: center;
   margin: 4rem;
 }
@@ -46,11 +46,6 @@ body {
 .menu-firstName,
 .menu-lastName {
   margin: 0;
-}
-
-.router-wrapper {
-  font-family: 'Raleway';
-  text-transform: uppercase;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

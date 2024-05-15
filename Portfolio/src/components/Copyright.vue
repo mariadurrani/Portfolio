@@ -9,17 +9,8 @@
 </template>
 
 <style>
-@font-face {
-    font-family: "Raleway";
-    src: url(../fonts/raleway/Raleway-Regular.ttf);
-}
-
-@font-face {
-    font-family: "RalewayBold";
-    src: url(../fonts/raleway/Raleway-ExtraBold.ttf);
-}
-
 .copyright {
+    display: flex;
     font-family: "Raleway";
     font-size: 20px;
 }
