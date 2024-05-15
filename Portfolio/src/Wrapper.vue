@@ -2,14 +2,14 @@
 </script>
 
 <template>
-    <div class="wrapper">
+    <div class="main-wrapper">
 
         <slot></slot>
     </div>
 </template>
 
 <style scoped>
-.wrapper {
+.main-wrapper {
     font-family: "Raleway";
     display: flex;
     flex-direction: column;

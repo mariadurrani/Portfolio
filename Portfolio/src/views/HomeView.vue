@@ -1,6 +1,5 @@
 <script setup lang="ts">
 import Wrapper from "@/Wrapper.vue";
-import Copyright from "../components/Copyright.vue"
 import { homeViewContent } from "./home-view-content";
 
 
