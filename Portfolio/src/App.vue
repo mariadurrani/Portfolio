@@ -1,7 +1,6 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { RouterLink, RouterView } from 'vue-router'
-import Copyright from "../src/components/Copyright.vue"
+import { RouterView } from 'vue-router'
 import { homeViewContent } from './views/home-view-content';
 import Wrapper from "@/Wrapper.vue";
 import RouterLinkNav from './components/RouterLinkNav.vue';
@@ -32,13 +31,11 @@ const isMenuShown = ref(false)
 
         <div v-if="isMenuShown" class="opened-menu">
             <RouterLinkMenu />
-
             <div class="menu-fullname">
                 <h1 class="menu-firstName">{{ homeViewContent.firstName }}</h1>
                 <h1 class="menu-lastName">{{ homeViewContent.lastName }}</h1>
             </div>
         </div>
-
         <RouterView />
     </Wrapper>
 </template>

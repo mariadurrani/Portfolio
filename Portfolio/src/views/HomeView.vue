@@ -19,7 +19,6 @@ import { homeViewContent } from "./home-view-content";
             </div>
         </header>
     </Wrapper>
-
 </template>
 
 <style src="../assets/HomeView.css"></style>
