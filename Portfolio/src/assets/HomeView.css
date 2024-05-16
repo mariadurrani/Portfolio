@@ -1,0 +1,115 @@
+.home-wrapper {
+  font-family: 'Raleway'; /* $font-family-primary */
+  text-transform: uppercase;
+  letter-spacing: -2px;
+}
+
+.home-page-left-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: #1e1e1e; /*  $color-black-heading */
+  margin-top: 10rem; /*  $margin-top-large */
+}
+
+.home-page-small-name,
+.home-page-title {
+  margin: 0;
+}
+
+.home-page-title {
+  font-size: 3rem;
+  text-align: center;
+  width: 15rem;
+}
+
+.home-page-right-container {
+  font-size: 1.5rem; /*  $font-size-small */
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  color: #1e1e1e; /*  $color-black-heading */
+  margin-top: 5rem; /* $margin-top */
+}
+
+.home-page-firstName,
+.home-page-lastName {
+  margin: 0;
+}
+
+.home-page-small-name {
+  font-size: 1.5rem; /* $font-size-small */
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .home-wrapper {
+    padding: 10px;
+  }
+
+  .home-page-title {
+    font-size: 4rem;
+  }
+
+  .home-page-left-container {
+    align-items: start;
+    margin-top: 5rem; /* $margin-top */
+  }
+
+  .home-page-right-container {
+    font-size: 2rem;
+    align-items: flex-end;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .home-page-title {
+    font-size: 4.5rem;
+  }
+
+  .home-page-left-container {
+    align-items: start;
+    margin-top: 4.5rem;
+  }
+
+  .home-page-right-container {
+    font-size: 2.5rem;
+    align-items: flex-end;
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1899px) {
+  .home-page-left-container {
+    margin-top: 1rem;
+    align-items: start;
+  }
+
+  .home-page-title {
+    font-size: 70px;
+  }
+
+  .home-page-right-container {
+    font-size: 35px;
+    align-items: flex-end;
+  }
+}
+
+@media (min-width: 1900px) {
+  .home-page-left-container {
+    margin-top: 1rem;
+    align-items: start;
+  }
+
+  .home-page-title {
+    font-size: 5rem;
+  }
+  .home-page-right-container {
+    margin-top: 10rem; /*  $margin-top-large */
+    font-size: 2.5rem;
+    align-items: flex-end;
+  }
+
+  .home-page-small-name {
+    font-size: 30px;
+  }
+}

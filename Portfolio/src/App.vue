@@ -1,180 +1,43 @@
 <script setup lang="ts">
 import { ref } from 'vue';
-import { RouterLink, RouterView } from 'vue-router'
-import Copyright from "../src/components/Copyright.vue"
+import { RouterView } from 'vue-router'
 import { homeViewContent } from './views/home-view-content';
+import Wrapper from "@/Wrapper.vue";
+import RouterLinkNav from './components/RouterLinkNav.vue';
+import RouterLinkMenu from './components/RouterLinkMenu.vue';
 
 const isMenuShown = ref(false)
-
 
 </script>
 
 <template>
-    <header>
-        <div class="router-wrapper">
-            <button @click="isMenuShown = !isMenuShown" class="menuButton">
-                <div class="line"></div>
-                <div class="line"></div>
-                <div class="line"></div>
-            </button>
+    <Wrapper>
+        <header>
+            <div class="router-wrapper">
+                <button @click="isMenuShown = !isMenuShown" class="menu-button-container">
+                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="menu-button">
+                        <path v-if="!isMenuShown"
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                        <path v-else="isMenuShown" fill="#ffffff"
+                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
+                    </svg>
+                </button>
 
-            <nav>
-                <ul class="navbar">
-                    <li>
-                        <RouterLink style="text-decoration: none; color: #1e1e1e; ;" to="/">Home
-                        </RouterLink>
-                    </li>
-                    <li>
-                        <RouterLink style="text-decoration: none; color: #1e1e1e; " to="/work">Work</RouterLink>
-                    </li>
-                    <li>
-                        <RouterLink style="text-decoration: none; color: #1e1e1e;" to="/about">About</RouterLink>
-                    </li>
-                    <li>
-                        <RouterLink style="text-decoration: none; color: #1e1e1e;" to="/contact">Contact</RouterLink>
-                    </li>
-                </ul>
-            </nav>
+                <nav>
+                    <RouterLinkNav />
+                </nav>
+            </div>
+        </header>
 
-        </div>
-    </header>
-
-    <div v-if="isMenuShown" class="openedMenu" style="font-family: 'RalewayBold'; text-transform: uppercase;">
-        <ul class="menu-links">
-            <li>
-                <RouterLink style="text-decoration: none; color: #ffff; ;" to="/">Home
-                </RouterLink>
-            </li>
-            <li>
-                <RouterLink style="text-decoration: none; color: #ffff; " to="/work">Work</RouterLink>
-            </li>
-            <li>
-                <RouterLink style="text-decoration: none; color: #ffff;" to="/about">About</RouterLink>
-            </li>
-            <li>
-                <RouterLink style="text-decoration: none; color: #ffff;" to="/contact">Contact</RouterLink>
-            </li>
-        </ul>
-
-        <div class="menu-fullName">
-            <h1 class="menu-firstName">{{ homeViewContent.firstName }}</h1>
-            <h1 class="menu-lastName">{{ homeViewContent.lastName }}</h1>
-        </div>
-
-
-
-    </div>
-
-    <RouterView />
+        <nav v-if="isMenuShown" class="opened-menu">
+            <RouterLinkMenu />
+            <div class="menu-fullname">
+                <h1 class="menu-firstName">{{ homeViewContent.firstName }}</h1>
+                <h1 class="menu-lastName">{{ homeViewContent.lastName }}</h1>
+            </div>
+        </nav>
+        <RouterView />
+    </Wrapper>
 </template>
 
-<style>
-html,
-body {
-    background-color: #D4ABB2;
-    font-family: "Raleway";
-    text-transform: uppercase;
-}
-
-.menuButton {
-    display: flex;
-    flex-direction: column;
-    background-color: transparent;
-    border: none;
-    z-index: 1000;
-    margin: 1rem 20rem;
-}
-
-.line {
-    width: 55px;
-    height: 3px;
-    background-color: black;
-    margin: 3px;
-}
-
-
-.router-wrapper {
-    font-family: "Raleway";
-    text-transform: uppercase;
-}
-
-.navbar {
-    display: flex;
-    justify-content: flex-end;
-    margin: 4rem 5rem;
-    font-size: 43px;
-    gap: 60px;
-    list-style: none;
-}
-
-@media (min-width: 280px) and (max-width: 767px) {
-    .navbar {
-        display: none;
-    }
-
-    .openedMenu {
-
-        background-color: #D4ABB2;
-        color: #ffff;
-        position: fixed;
-        margin: 40px;
-        width: 100%;
-        height: 100%;
-        top: 0;
-        left: 0;
-        right: 0;
-        bottom: 0;
-    }
-
-    .menu-links {
-        display: flex;
-        flex-direction: column;
-        font-size: 60px;
-    }
-
-    .menu-links li {
-        margin-top: 20px;
-        padding: 8px;
-        list-style: none;
-    }
-
-    .menu-fullName {
-        display: flex;
-        flex-direction: column;
-        align-items: flex-end;
-        font-size: 22px;
-        color: #ffffffa4;
-        margin: 3rem 2rem;
-    }
-
-    .menu-firstName,
-    .menu-lastName {
-        margin: 0;
-    }
-
-}
-
-
-@media (min-width: 768px) and (max-width: 1024px) {
-    .navbar {
-        justify-content: center;
-        align-items: center;
-        font-size: 28px;
-        gap: 50px;
-    }
-}
-
-@media (min-width: 1025px) and (max-width: 1280px) {
-    .navbar {
-        justify-content: center;
-        align-items: center;
-        font-size: 30px;
-    }
-}
-
-@media (min-width: 1281px) and (max-width: 1899px) {
-    .navbar {
-        font-size: 35px;
-    }
-}
-</style>
+<style src="./assets/App.css"></style>
