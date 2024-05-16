@@ -1,5 +1,5 @@
 .home-wrapper {
-  font-family: 'Raleway';
+  font-family: 'Raleway'; /* $font-family-primary */
   text-transform: uppercase;
   letter-spacing: -2px;
 }
@@ -39,7 +39,7 @@
 }
 
 .home-page-small-name {
-  font-size: 1.5rem;
+  font-size: 1.5rem; /* $font-size-small */
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {

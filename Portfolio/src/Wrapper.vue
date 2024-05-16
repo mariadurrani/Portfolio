@@ -11,6 +11,7 @@
 <style scoped>
 .main-wrapper {
     font-family: "Raleway";
+    /* $font-family-primary */
     display: flex;
     flex-direction: column;
 
