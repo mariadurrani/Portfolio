@@ -6,6 +6,7 @@ import { RouterLink } from 'vue-router'
 <template>
     <div>
         <ul class="navbar">
+            <!-- Todo: We need to add a RouterLinkListItem component and pass props dynamically to it. -->
             <li>
                 <RouterLink to="/" class="navbar-link">Home
                 </RouterLink>
