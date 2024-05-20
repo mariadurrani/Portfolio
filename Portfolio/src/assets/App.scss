@@ -1,7 +1,9 @@
+@import './Variables.scss';
+
 html,
 body {
-  background-color: #d4abb2; /*  $color-pink-primary */
-  font-family: 'Raleway'; /*  $font-family-primary */
+  background-color: $color-pink-primary;
+  font-family: $font-family-primary;
 }
 
 .menu-button-container {
@@ -24,8 +26,8 @@ body {
 .opened-menu {
   display: block;
   text-transform: uppercase;
-  background-color: #d4abb2; /*  $color-pink-primary */
-  color: #ffff; /* $color-white */
+  background-color: $color-pink-primary;
+  color: $color-white;
   margin: 0;
   position: fixed;
   width: 100%;
@@ -37,8 +39,8 @@ body {
 }
 
 .menu-fullname {
-  font-size: 1.5rem; /* $font-size-small */
-  color: #ffff; /*  $color-white */
+  font-size: $font-size-small;
+  color: $color-white;
   text-align: center;
   margin: 4rem;
 }
@@ -50,31 +52,25 @@ body {
 
 @media (min-width: 768px) and (max-width: 1024px) {
   /* Small screens, Laptops */
-
   .menu-button,
   .opened-menu {
     display: none;
   }
 }
-
 @media (min-width: 1025px) and (max-width: 1200px) {
   /* Desktops, Large screens */
-
   .menu-button,
   .opened-menu {
     display: none;
   }
 }
-
 @media (min-width: 1201px) and (max-width: 1899px) {
   /* Extra large screens, TV */
-
   .menu-button,
   .opened-menu {
     display: none;
   }
 }
-
 @media (min-width: 1900px) {
   .menu-button,
   .opened-menu {
