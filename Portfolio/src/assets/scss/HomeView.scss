@@ -1,0 +1,117 @@
+@import './Variables.scss';
+
+.home-wrapper {
+  font-family: $font-family-primary;
+  text-transform: $text-transform-uppercase;
+  letter-spacing: $letter-spacing;
+}
+
+.home-page-left-container {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  color: $color-black;
+  margin-top: $margin-top-large;
+}
+
+.home-page-small-name,
+.home-page-title {
+  margin: $margin-zero;
+}
+
+.home-page-title {
+  font-size: 3rem;
+  text-align: center;
+  width: $width-xlarge;
+}
+
+.home-page-right-container {
+  font-size: $font-size-small;
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  flex-direction: column;
+  color: $color-black;
+  margin-top: $margin-top-small;
+}
+
+.home-page-firstName,
+.home-page-lastName {
+  margin: $margin-zero;
+}
+
+.home-page-small-name {
+  font-size: $font-size-small;
+}
+
+@media (min-width: 768px) and (max-width: 1024px) {
+  .home-wrapper {
+    padding: $padding-small;
+  }
+
+  .home-page-title {
+    font-size: $font-size-medium;
+  }
+
+  .home-page-left-container {
+    align-items: start;
+    margin-top: $margin-top-small;
+  }
+
+  .home-page-right-container {
+    font-size: $font-size-small;
+    align-items: flex-end;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1280px) {
+  .home-page-title {
+    font-size: $font-size-medium;
+  }
+
+  .home-page-left-container {
+    align-items: start;
+    margin-top: 4.5rem;
+  }
+
+  .home-page-right-container {
+    font-size: $font-size-small;
+    align-items: flex-end;
+  }
+}
+
+@media (min-width: 1281px) and (max-width: 1899px) {
+  .home-page-left-container {
+    margin-top: 1rem;
+    align-items: start;
+  }
+
+  .home-page-title {
+    font-size: $font-size-medium;
+  }
+
+  .home-page-right-container {
+    font-size: $font-size-small;
+    align-items: flex-end;
+  }
+}
+
+@media (min-width: 1900px) {
+  .home-page-left-container {
+    margin-top: 1rem;
+    align-items: start;
+  }
+
+  .home-page-title {
+    font-size: 5rem;
+  }
+  .home-page-right-container {
+    margin-top: $margin-top-large;
+    font-size: 2.5rem;
+    align-items: flex-end;
+  }
+
+  .home-page-small-name {
+    font-size: $font-size-small;
+  }
+}
