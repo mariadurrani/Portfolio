@@ -1,0 +1,45 @@
+$color-black: #1e1e1e;
+$gap: 80px;
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  gap: 60px;
+  list-style: none;
+}
+
+.navbar-link {
+  text-decoration: none;
+  color: $color-black;
+}
+
+@media (max-width: 767px) {
+  .navbar {
+    display: none;
+  }
+}
+
+@media (min-width: 1025px) and (max-width: 1200px) {
+  .navbar {
+    gap: $gap;
+  }
+}
+
+@media (min-width: 1201px) and (max-width: 1899px) {
+  .navbar {
+    display: flex;
+    justify-content: flex-end;
+    gap: $gap;
+  }
+}
+
+@media (min-width: 1900px) {
+  .navbar {
+    font-size: 35px;
+    display: flex;
+    justify-content: flex-end;
+    gap: $gap;
+  }
+}
