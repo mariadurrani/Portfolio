@@ -22,7 +22,7 @@
 .home-page-title {
   font-size: 3rem;
   text-align: center;
-  width: 15rem;
+  width: $width-xlarge;
 }
 
 .home-page-right-container {
@@ -46,11 +46,11 @@
 
 @media (min-width: 768px) and (max-width: 1024px) {
   .home-wrapper {
-    padding: 10px;
+    padding: $padding-small;
   }
 
   .home-page-title {
-    font-size: 4rem;
+    font-size: $font-size-medium;
   }
 
   .home-page-left-container {
@@ -59,14 +59,14 @@
   }
 
   .home-page-right-container {
-    font-size: 2rem;
+    font-size: $font-size-small;
     align-items: flex-end;
   }
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
   .home-page-title {
-    font-size: 4.5rem;
+    font-size: $font-size-medium;
   }
 
   .home-page-left-container {
@@ -75,7 +75,7 @@
   }
 
   .home-page-right-container {
-    font-size: 2.5rem;
+    font-size: $font-size-small;
     align-items: flex-end;
   }
 }
@@ -87,11 +87,11 @@
   }
 
   .home-page-title {
-    font-size: 70px;
+    font-size: $font-size-medium;
   }
 
   .home-page-right-container {
-    font-size: 35px;
+    font-size: $font-size-small;
     align-items: flex-end;
   }
 }
@@ -112,6 +112,6 @@
   }
 
   .home-page-small-name {
-    font-size: 30px;
+    font-size: $font-size-small;
   }
 }

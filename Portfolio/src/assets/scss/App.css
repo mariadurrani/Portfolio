@@ -1,9 +1,7 @@
-@import './Variables.scss';
-
 html,
 body {
-  background-color: $color-pink-primary;
-  font-family: $font-family-primary;
+  background-color: #d4abb2;
+  font-family: "Raleway";
 }
 
 .menu-button-container {
@@ -19,15 +17,15 @@ body {
 
 .menu-button {
   display: flex;
-  width: $width-small;
+  width: 2rem;
   height: 3rem;
 }
 
 .opened-menu {
   display: block;
   text-transform: uppercase;
-  background-color: $color-pink-primary;
-  color: $color-white;
+  background-color: #d4abb2;
+  color: white;
   margin: 0;
   position: fixed;
   width: 100%;
@@ -39,8 +37,8 @@ body {
 }
 
 .menu-fullname {
-  font-size: $font-size-small;
-  color: $color-white;
+  font-size: 2rem;
+  color: white;
   text-align: center;
   margin: 4rem;
 }
@@ -76,4 +74,4 @@ body {
   .opened-menu {
     display: none;
   }
-}
+}/*# sourceMappingURL=App.css.map */
