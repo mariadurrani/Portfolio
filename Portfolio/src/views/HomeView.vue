@@ -20,4 +20,4 @@ import { homeViewContent } from "./home-view-content";
     </Wrapper>
 </template>
 
-<style src="../assets/scss/HomeView.scss"></style>
+<style src="../assets/HomeView.scss"></style>
