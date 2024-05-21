@@ -40,4 +40,4 @@ const isMenuShown = ref(false)
     </Wrapper>
 </template>
 
-<style src="./assets/css/App.css"></style>
+<style src="./assets/scss/App.scss"></style>
