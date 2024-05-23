@@ -1,5 +1,12 @@
 <script setup lang="ts">
 import Wrapper from '@/Wrapper.vue';
+import { ref } from 'vue';
+
+const projects = ref([
+    { id: 1, label: "Project Name", text: "Year" },
+    { id: 2, label: "Project Name", text: "Year" },
+    { id: 3, label: "Project Name", text: "Year" }
+])
 </script>
 
 <template>
@@ -10,6 +17,15 @@ import Wrapper from '@/Wrapper.vue';
                 <p class="work-page-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. In adipisci, quia
                     ipsa voluptatibus deleniti hic temporibus harum, repudiandae sint, provident error aut ullam nihil
                     laboriosam suscipit odio excepturi ratione est.</p>
+            </div>
+
+            <div class="work-page-projects-container">
+                <ul class="work-page-projects">
+                    <li v-for="project in projects" :key="project.id" className="work-page-project"> <span
+                            class="project-label">{{ project.label }}</span>
+                        <span class="project-text">{{ "-" + " " + project.text }}</span>
+                    </li>
+                </ul>
             </div>
         </main>
     </Wrapper>
