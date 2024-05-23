@@ -1,0 +1,40 @@
+$margin-zero: 0;
+
+.work-page-wrapper {
+  height: 100%;
+}
+
+.work-page-text-container {
+  /* font-family: "TitilliumWeb"; */
+  margin: 7rem 2rem;
+}
+
+.work-page-title {
+  text-transform: uppercase;
+  font-weight: 600;
+}
+
+@media (min-width: 768px) and (max-width: 1200px) {
+  .work-page-text-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    margin: $margin-zero;
+  }
+
+  .work-page-desc {
+    width: 30rem;
+  }
+}
+
+@media (min-width: 1201px) {
+  .work-page-text-container {
+    margin: 20rem 0;
+    font-size: 17px;
+  }
+
+  .work-page-desc {
+    width: 30rem;
+  }
+}
