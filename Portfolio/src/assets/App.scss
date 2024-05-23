@@ -38,6 +38,13 @@ body {
   bottom: 0;
 }
 
+.menu-button,
+.opened-menu {
+  @media (min-width: 768px) {
+    display: none;
+  }
+}
+
 .menu-fullname {
   font-size: $font-size-small;
   color: $color-white;
@@ -48,32 +55,4 @@ body {
 .menu-firstName,
 .menu-lastName {
   margin: $margin-zero;
-}
-
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* Small screens, Laptops */
-  .menu-button,
-  .opened-menu {
-    display: none;
-  }
-}
-@media (min-width: 1025px) and (max-width: 1200px) {
-  /* Desktops, Large screens */
-  .menu-button,
-  .opened-menu {
-    display: none;
-  }
-}
-@media (min-width: 1201px) and (max-width: 1899px) {
-  /* Extra large screens, TV */
-  .menu-button,
-  .opened-menu {
-    display: none;
-  }
-}
-@media (min-width: 1900px) {
-  .menu-button,
-  .opened-menu {
-    display: none;
-  }
 }
