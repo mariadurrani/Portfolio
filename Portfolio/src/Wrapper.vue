@@ -8,10 +8,11 @@
     </div>
 </template>
 
-<style scoped>
+<style scoped lang="scss">
+@import './assets/Variables.scss';
+
 .main-wrapper {
-    font-family: "Raleway";
-    /* $font-family-primary */
+    font-family: $font-family-primary;
     display: flex;
     flex-direction: column;
 
