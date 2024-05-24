@@ -1,39 +1,23 @@
-# Portfolio
+Welcome to Maria Durrani's Portfolio! 🚀
 
-This template should help get you started developing with Vue 3 in Vite.
+Hey there! 👋 Welcome to my portfolio, where I showcase my journey as a budding frontend developer! 🌟
 
-## Recommended IDE Setup
+About Me ℹ️  
+I'm passionate about creating beautiful and intuitive user experiences through web development. Whether it's crafting elegant designs or diving into the intricacies of code, I love every aspect of frontend development! 💻
 
-[VSCode](https://code.visualstudio.com/) + [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) (and disable Vetur).
+What You'll Find Here 📂   
+Projects: Explore my latest creations, from simple landing pages to interactive web applications.   
+Skills: Check out the technologies I'm developing in, including HTML, CSS, JavaScript, Vue, Sass and more!   
+About Me: Learn more about my background, interests, and aspirations in the world of frontend development.
 
-## Type Support for `.vue` Imports in TS
+Let's Connect! 🤝
 
-TypeScript cannot handle type information for `.vue` imports by default, so we replace the `tsc` CLI with `vue-tsc` for type checking. In editors, we need [Volar](https://marketplace.visualstudio.com/items?itemName=Vue.volar) to make the TypeScript language service aware of `.vue` types.
+I'm always eager to collaborate and learn from fellow developers! Feel free to reach out to me via:
 
-## Customize configuration
+Email: maria_durrani@hotmail.com    
+LinkedIn: https://www.linkedin.com/in/maria-durrani00/    
+GitHub: https://github.com/mariadurrani
 
-See [Vite Configuration Reference](https://vitejs.dev/config/).
+Let's build something awesome together! 🌐
 
-## Project Setup
-
-```sh
-npm install
-```
-
-### Compile and Hot-Reload for Development
-
-```sh
-npm run dev
-```
-
-### Type-Check, Compile and Minify for Production
-
-```sh
-npm run build
-```
-
-### Lint with [ESLint](https://eslint.org/)
-
-```sh
-npm run lint
-```
+Happy coding! 💻✨
