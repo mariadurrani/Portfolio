@@ -1,6 +1,3 @@
-<script setup lang="ts">
-</script>
-
 <template>
     <div class="main-wrapper">
 
@@ -24,3 +21,6 @@
     }
 }
 </style>
+
+<script setup lang="ts">
+</script>

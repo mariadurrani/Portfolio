@@ -1,3 +1,9 @@
+<template>
+    <li>
+        <RouterLink :to="props.to" :class="props.className">{{ props.text }}</RouterLink>
+    </li>
+</template>
+
 <script setup lang="ts">
 import { RouterLink } from 'vue-router'
 
@@ -9,12 +15,3 @@ interface Props {
 
 const props = defineProps<Props>();
 </script>
-
-<template>
-    <li>
-        <RouterLink :to="props.to" :class="props.className">{{ props.text }}</RouterLink>
-    </li>
-</template>
-
-<style>
-</style>
