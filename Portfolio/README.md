@@ -7,7 +7,7 @@ I'm passionate about creating beautiful and intuitive user experiences through w
 
 What You'll Find Here 📂   
 Projects: Explore my latest creations, from simple landing pages to interactive web applications.   
-Skills: Check out the technologies I'm developing in, including HTML, CSS, JavaScript, Vue, Sass and more!   
+Skills: Check out the technologies I'm developing in, including HTML, CSS, JavaScript, Vue, Sass and more!  
 About Me: Learn more about my background, interests, and aspirations in the world of frontend development.
 
 Let's Connect! 🤝
