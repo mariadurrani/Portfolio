@@ -20,13 +20,16 @@
 }
 
 .home-page-title {
-  font-size: $font-size-medium;
+  font-size: $font-size-h2-mobile;
   text-align: center;
-  width: $base-width * 15;
+
+  @media (min-width: 533px) {
+    width: $base-width * 15;
+  }
 }
 
 .home-page-right-container {
-  font-size: $font-size-xsmall;
+  font-size: 2rem; /* Come back */
   justify-content: center;
   align-items: center;
   display: flex;
@@ -41,7 +44,7 @@
 }
 
 .home-page-small-name {
-  font-size: $font-size-small;
+  font-size: $font-size-h3-mobile;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
@@ -50,7 +53,7 @@
   }
 
   .home-page-title {
-    font-size: $font-size-large;
+    font-size: $font-size-h2-mobile-md;
   }
 
   .home-page-left-container {
@@ -59,14 +62,14 @@
   }
 
   .home-page-right-container {
-    font-size: $font-size-small;
+    font-size: 2.5rem; /* Come back */
     align-items: flex-end;
   }
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
   .home-page-title {
-    font-size: $font-size-large;
+    font-size: $font-size-h2-mobile-md;
   }
 
   .home-page-left-container {
@@ -75,7 +78,7 @@
   }
 
   .home-page-right-container {
-    font-size: $font-size-small;
+    font-size: 2.5rem; /* Come back */
     align-items: flex-end;
   }
 }
@@ -87,11 +90,11 @@
   }
 
   .home-page-title {
-    font-size: $font-size-large;
+    font-size: $font-size-h2-mobile-md;
   }
 
   .home-page-right-container {
-    font-size: $font-size-small;
+    font-size: 2.5rem; /* Come back */
     align-items: flex-end;
   }
 }
@@ -103,15 +106,15 @@
   }
 
   .home-page-title {
-    font-size: $font-size-xlarge;
+    font-size: $font-size-h2-mobile-lg;
   }
   .home-page-right-container {
     margin-top: $base-margin-top * 10;
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     align-items: flex-end;
   }
 
   .home-page-small-name {
-    font-size: $font-size-small;
+    font-size: $font-size-h3-mobile;
   }
 }
