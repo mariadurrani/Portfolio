@@ -13,4 +13,22 @@ import RouterLinkListItem from './RouterLinkListItem.vue';
     </div>
 </template>
 
-<style src="../assets/RouterLinkMenu.scss"></style>
+<style>
+.menu-links {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    font-size: 60px;
+    margin: 7rem;
+    gap: 2rem;
+    list-style: none;
+    padding: 0;
+}
+
+.opened-menu-link {
+    text-decoration: none;
+    color: #ffff;
+}
+</style>
