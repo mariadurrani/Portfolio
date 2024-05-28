@@ -1,13 +1,12 @@
 @import 'Variables.scss';
 
-$color-black: #1e1e1e;
-
 .navbar {
   display: flex;
   justify-content: center;
   align-items: center;
   font-size: 25px;
   list-style: none;
+  gap: $gap-mobile;
 }
 
 .navbar-link {
@@ -21,23 +20,15 @@ $color-black: #1e1e1e;
   }
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 1201px) {
   .navbar {
-    gap: $gap;
-  }
-}
-
-@media (min-width: 1201px) and (max-width: 1899px) {
-  .navbar {
-    display: flex;
     justify-content: flex-end;
+    gap: $gap-desktop;
   }
 }
 
 @media (min-width: 1900px) {
   .navbar {
     font-size: 35px;
-    display: flex;
-    justify-content: flex-end;
   }
 }
