@@ -4,9 +4,8 @@
   display: flex;
   justify-content: center;
   align-items: center;
-  font-size: 25px;
+  font-size: $font-size-ul-desktop;
   list-style: none;
-  gap: $gap-mobile;
 }
 
 .navbar-link {
@@ -20,15 +19,21 @@
   }
 }
 
+@media (min-width: 768px) {
+  .navbar {
+    gap: $gap-md;
+  }
+}
+
 @media (min-width: 1201px) {
   .navbar {
     justify-content: flex-end;
-    gap: $gap-desktop;
+    gap: $gap-lg;
   }
 }
 
 @media (min-width: 1900px) {
   .navbar {
-    font-size: 35px;
+    font-size: $font-size-ul-desktop-md;
   }
 }

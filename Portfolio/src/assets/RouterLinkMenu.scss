@@ -1,4 +1,4 @@
-$color-white: #ffff;
+@import 'Variables.scss';
 
 .menu-links {
   display: flex;
@@ -6,9 +6,9 @@ $color-white: #ffff;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 60px;
+  font-size: $font-size-ul-mobile;
   margin: 7rem;
-  gap: 2rem;
+  gap: $gap-sm;
   list-style: none;
   padding: 0;
 }

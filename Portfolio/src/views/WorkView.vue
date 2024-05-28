@@ -21,8 +21,8 @@ const projects = ref([
 
             <div class="work-page-projects-container">
                 <ul class="work-page-projects">
-                    <li v-for="project in projects" :key="project.id" className="work-page-project"> <span
-                            class="project-label">{{ project.label }}</span>
+                    <li v-for="project in projects" :key="project.id" className="work-page-project">
+                        <span class="project-label">{{ project.label }}</span>
                         <span class="project-text">{{ "-" + " " + project.text }}</span>
                     </li>
                 </ul>

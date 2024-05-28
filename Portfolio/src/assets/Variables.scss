@@ -5,18 +5,33 @@ $base-margin-top: 1rem;
 $base-width: 1rem;
 $base-padding: 10px;
 
-$gap-mobile: 60px;
-$gap-desktop: 80px;
+// Gap Variables
+$gap-xs: 1rem;
+$gap-sm: 3rem;
+$gap-md: 4rem;
+$gap-lg: 5rem;
 
 // Color Variables
 $color-black: #1e1e1e;
 $color-white: #ffff;
 
 // Font Variables
+$font-size-span-mobile: 1.5rem;
+$font-size-span-mobile-sm: 2rem;
+$font-size-span-mobile-md: 2.5rem;
+$font-size-span-desktop: 4rem;
+$font-size-span-desktop-md: 5.3rem;
+
+$font-size-p-desktop: 1.2rem;
+
 $font-size-h2-mobile: 3rem;
 $font-size-h2-mobile-md: 4rem;
 $font-size-h2-mobile-lg: 5rem;
 
 $font-size-h3-mobile: 2rem;
+
+$font-size-ul-desktop: 1.7rem;
+$font-size-ul-desktop-md: 2rem;
+$font-size-ul-mobile: 3.7rem;
 
 $letter-spacing: -2px;
