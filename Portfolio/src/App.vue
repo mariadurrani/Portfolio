@@ -31,11 +31,6 @@ const isMenuShown = ref(false)
 
         <nav v-if="isMenuShown" class="opened-menu">
             <RouterLinkMenu />
-            <!-- Remove this below in another branch (not needed) and position the menu links in the middle -->
-            <div class="menu-fullname">
-                <h1 class="menu-firstName">{{ homeViewContent.firstName }}</h1>
-                <h1 class="menu-lastName">{{ homeViewContent.lastName }}</h1>
-            </div>
         </nav>
         <RouterView />
     </Wrapper>

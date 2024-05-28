@@ -38,18 +38,6 @@ body {
   bottom: 0;
 }
 
-.menu-fullname {
-  font-size: $font-size-h2-mobile;
-  color: $color-white;
-  text-align: center;
-  margin: 0;
-}
-
-.menu-firstName,
-.menu-lastName {
-  margin: 0;
-}
-
 @media (min-width: 768px) and (max-width: 1024px) {
   /* Small screens, Laptops */
   .menu-button,

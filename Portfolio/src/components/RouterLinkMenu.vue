@@ -32,7 +32,7 @@ import { RouterLink } from 'vue-router'
     align-items: center;
     text-align: center;
     font-size: 60px;
-    margin: 7rem;
+    margin: 15rem;
     gap: 2rem;
     list-style: none;
     padding: 0;
