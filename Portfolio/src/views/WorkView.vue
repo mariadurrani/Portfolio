@@ -13,7 +13,7 @@ const projects = ref([
     <Wrapper>
         <main class="work-page-wrapper">
             <div class="work-page-text-container">
-                <p class="work-page-title">Work</p>
+                <h1 class="work-page-title">Work</h1>
                 <p class="work-page-desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. In adipisci, quia
                     ipsa voluptatibus deleniti hic temporibus harum, repudiandae sint, provident error aut ullam nihil
                     laboriosam suscipit odio excepturi ratione est.</p>
