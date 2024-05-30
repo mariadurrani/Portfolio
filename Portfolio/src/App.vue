@@ -1,4 +1,4 @@
-<script setup lang="ts">
+¨<script setup lang="ts">
 import { ref } from 'vue';
 import { RouterView } from 'vue-router'
 import { homeViewContent } from './content/home-view-content';

@@ -4,6 +4,7 @@ $font-family-primary: 'Raleway';
 $base-margin-top: 1rem;
 $base-width: 1rem;
 $base-padding: 10px;
+$base-font-size: 1rem;
 
 // Gap Variables
 $gap-xs: 1rem;
@@ -16,23 +17,10 @@ $color-black: #1e1e1e;
 $color-white: #ffff;
 
 // Font Variables
-$font-size-span-mobile: 1.5rem;
-$font-size-span-mobile-sm: 2rem;
-$font-size-span-mobile-md: 2.5rem;
-$font-size-span-desktop: 4rem;
-$font-size-span-desktop-md: 5.3rem;
-
-$font-size-p-desktop: 1.2rem;
-
-$font-size-h2-mobile: 3rem;
-$font-size-h2-mobile-md: 4rem;
-$font-size-h2-mobile-lg: 5rem;
-
-$font-size-h3-mobile: 2rem;
-
-$font-size-ul-desktop: 1.7rem;
-$font-size-ul-desktop-md: 2rem;
-$font-size-ul-mobile: 3.7rem;
+$font-size-xs: 2rem;
+$font-size-sm: 3rem;
+$font-size-md: 4rem;
+$font-size-lg: 5rem;
 
 $letter-spacing-xs: -1px;
 $letter-spacing-sm: -2px;
