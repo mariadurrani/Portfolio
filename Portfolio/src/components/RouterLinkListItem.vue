@@ -15,6 +15,3 @@ const props = defineProps<Props>();
         <RouterLink :to="props.to" :class="props.className">{{ props.text }}</RouterLink>
     </li>
 </template>
-
-<style>
-</style>
