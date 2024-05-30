@@ -7,7 +7,10 @@ import { homeViewContent } from "../content/home-view-content";
     <Wrapper>
         <header class="home-wrapper">
             <div class="home-page-left-container">
-                <h3 class="home-page-small-name">{{ homeViewContent.firstName }}</h3>
+                <div class="home-page-small-full-name">
+                    <h3 class="home-page-small-first-name">{{ homeViewContent.firstName }}</h3>
+                    <h3 class="home-page-small-last-name">{{ homeViewContent.lastName }}</h3>
+                </div>
                 <h2 class="home-page-title">{{ homeViewContent.titleCareer }}</h2>
             </div>
             <div class="home-page-right-container">
