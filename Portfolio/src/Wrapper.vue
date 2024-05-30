@@ -1,4 +1,5 @@
 <script setup lang="ts">
+
 </script>
 
 <template>
@@ -16,7 +17,7 @@
     flex-direction: column;
 
     @media (min-width: 768px) and (max-width: 1899px) {
-        margin: 4rem;
+        margin: 2rem;
     }
 
     @media (min-width: 1900px) {
