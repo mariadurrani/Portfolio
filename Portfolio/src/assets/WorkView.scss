@@ -1,37 +1,29 @@
 @import 'Variables.scss';
 
-.work-page-wrapper {
-  color: $color-black;
-  display: flex;
-  flex-direction: column;
+.work-page {
+  &__wrapper {
+    color: $color-black;
+    display: flex;
+    flex-direction: column;
 
-  .work-page-text-container {
-    /* font-family: "TitilliumWeb"; */
+    @media (min-width: 1201px) and (max-width: 1899px) {
+      flex-direction: row;
+      justify-content: space-between;
+      padding-right: 20px;
+    }
+
+    @media (min-width: 1900px) {
+      flex-direction: row;
+      padding-right: 20px;
+      height: 80vh;
+      justify-content: space-between;
+    }
+  }
+
+  &__text-container {
     display: flex;
     flex-direction: column;
     margin: 7rem 2rem;
-
-    .work-page-title {
-      text-transform: uppercase;
-      font-weight: 600;
-
-      @media (min-width: 1900px) {
-        font-size: 30px;
-      }
-    }
-
-    .work-page-desc {
-      margin: 0;
-      line-height: 1.7rem;
-
-      @media (min-width: 768px) and (max-width: 1200px) {
-        width: $base-width * 30;
-      }
-
-      @media (min-width: 1900px) {
-        font-size: $base-font-size * 1.2;
-      }
-    }
 
     @media (min-width: 768px) and (max-width: 1200px) {
       align-items: center;
@@ -51,48 +43,47 @@
       width: $base-width * 40;
       margin-bottom: 5rem;
     }
-  }
 
-  .work-page-projects-container {
+    &__title {
+      text-transform: uppercase;
+      font-weight: 600;
+
+      @media (min-width: 1900px) {
+        font-size: 30px;
+      }
+    }
+
+    &__desc {
+      margin: 0;
+      line-height: 1.7rem;
+
+      @media (min-width: 768px) and (max-width: 1200px) {
+        width: $base-width * 30;
+      }
+
+      @media (min-width: 1900px) {
+        font-size: $base-font-size * 1.2;
+      }
+    }
+  }
+  &__projects-container {
     display: flex;
 
-    .work-page-projects {
+    @media (min-width: 768px) and (max-width: 1200px) {
+      justify-content: center;
+      margin-top: $base-margin-top * 5;
+    }
+
+    @media (min-width: 1201px) {
+      justify-content: flex-end;
+    }
+
+    &__projects {
       display: flex;
       flex-direction: column;
       gap: $gap-sm;
       list-style: none;
       text-transform: uppercase;
-
-      .work-page-project {
-        display: flex;
-        flex-direction: column;
-        gap: $gap-xs;
-
-        .project-label {
-          font-family: 'Raleway';
-          font-weight: 800;
-          letter-spacing: $letter-spacing-xs;
-          font-size: $base-font-size * 2.5;
-
-          @media (min-width: 1201px) and (max-width: 1899px) {
-            font-size: $font-size-md;
-          }
-
-          @media (min-width: 1900px) {
-            font-size: $font-size-md;
-          }
-        }
-
-        .project-text {
-          @media (min-width: 1201px) and (max-width: 1899px) {
-            font-size: $base-font-size * 1.5;
-          }
-
-          @media (min-width: 1900px) {
-            font-size: $font-size-xs;
-          }
-        }
-      }
 
       @media (min-width: 768px) and (max-width: 1200px) {
         justify-content: center;
@@ -109,27 +100,36 @@
         align-items: center;
       }
     }
-
-    @media (min-width: 768px) and (max-width: 1200px) {
-      justify-content: center;
-      margin-top: $base-margin-top * 5;
-    }
-
-    @media (min-width: 1201px) {
-      justify-content: flex-end;
-    }
   }
 
-  @media (min-width: 1201px) and (max-width: 1899px) {
-    flex-direction: row;
-    justify-content: space-between;
-    padding-right: 20px;
-  }
+  &__project {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-xs;
 
-  @media (min-width: 1900px) {
-    flex-direction: row;
-    padding-right: 20px;
-    height: 80vh;
-    justify-content: space-between;
+    &__project-label {
+      font-family: 'Raleway';
+      font-weight: 800;
+      letter-spacing: $letter-spacing-xs;
+      font-size: $base-font-size * 2.5;
+
+      @media (min-width: 1201px) and (max-width: 1899px) {
+        font-size: $font-size-md;
+      }
+
+      @media (min-width: 1900px) {
+        font-size: $font-size-md;
+      }
+    }
+
+    &__project-text {
+      @media (min-width: 1201px) and (max-width: 1899px) {
+        font-size: $base-font-size * 1.5;
+      }
+
+      @media (min-width: 1900px) {
+        font-size: $font-size-xs;
+      }
+    }
   }
 }
