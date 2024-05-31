@@ -7,14 +7,15 @@ import { homeViewContent } from "./home-view-content";
 
 <template>
     <Wrapper>
-        <header class="home-wrapper">
-            <div class="home-page-left-container">
-                <p class="home-page-small-name">{{ homeViewContent.firstName }}</p>
-                <h1 class="home-page-title">{{ homeViewContent.titleCareer }}</h1>
+        <header class="home-page__wrapper">
+            <div class="home-page__introduction">
+                <p class="home-page__introduction__hi">Hi! I'm</p>
+                <p class="home-page__introduction__name">{{ homeViewContent.firstName + " " + homeViewContent.lastName
+                    }}</p>
             </div>
-            <div class="home-page-right-container">
-                <h2 class="home-page-firstName">{{ homeViewContent.firstName }}</h2>
-                <h2 class="home-page-lastName">{{ homeViewContent.lastName }}</h2>
+            <div class="home-page__career">
+                <p class="home-page__career__p">A</p>
+                <p class="home-page__career__title">Frontend developer</p>
             </div>
         </header>
     </Wrapper>

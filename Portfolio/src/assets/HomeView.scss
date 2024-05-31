@@ -1,12 +1,12 @@
 @import './Variables.scss';
 
-.home-wrapper {
+.home-page__wrapper {
   font-family: $font-family-primary;
   text-transform: uppercase;
   letter-spacing: $letter-spacing;
 }
 
-.home-page-left-container {
+.home-page__introduction {
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -14,22 +14,23 @@
   margin-top: $base-margin-top * 10;
 }
 
-.home-page-small-name,
-.home-page-title {
+.home-page__introduction__hi {
+  text-transform: lowercase;
+}
+
+.home-page__introduction__hi,
+.home-page__introduction__name {
   margin: 0;
 }
 
-.home-page-title {
+.home-page__introduction__name {
   font-size: $font-size-h2-mobile;
   text-align: center;
-
-  @media (min-width: 533px) {
-    width: $base-width * 15;
-  }
+  font-weight: 800;
+  width: $base-width * 15;
 }
 
-.home-page-right-container {
-  font-size: 2rem; /* Come back */
+.home-page__career {
   justify-content: center;
   align-items: center;
   display: flex;
@@ -38,83 +39,97 @@
   margin-top: $base-margin-top * 5;
 }
 
-.home-page-firstName,
-.home-page-lastName {
+.home-page__career__p {
+  font-size: 2rem;
+  text-transform: lowercase;
+}
+
+.home-page__career__title {
+  font-weight: 800;
+  font-size: 3rem;
+  width: $base-width * 15;
+}
+
+.home-page__career__p,
+.home-page__career__title {
   margin: 0;
 }
 
-.home-page-small-name {
+.home-page__introduction__hi {
   font-size: $font-size-h3-mobile;
 }
 
 @media (min-width: 768px) and (max-width: 1024px) {
-  .home-wrapper {
+  .home-page__wrapper {
     padding: $base-padding;
   }
 
-  .home-page-title {
+  .home-page__introduction__name {
     font-size: $font-size-h2-mobile-md;
+    text-align: start;
   }
 
-  .home-page-left-container {
+  .home-page__introduction {
     align-items: start;
     margin-top: $base-margin-top * 5;
   }
-
-  .home-page-right-container {
+  .home-page__career {
     font-size: 2.5rem; /* Come back */
     align-items: flex-end;
   }
 }
 
 @media (min-width: 1025px) and (max-width: 1280px) {
-  .home-page-title {
+  .home-page__introduction__name {
     font-size: $font-size-h2-mobile-md;
+    text-align: start;
   }
 
-  .home-page-left-container {
+  .home-page__introduction {
     align-items: start;
     margin-top: 4.5rem;
   }
 
-  .home-page-right-container {
+  .home-page__career {
     font-size: 2.5rem; /* Come back */
     align-items: flex-end;
   }
 }
 
 @media (min-width: 1281px) and (max-width: 1899px) {
-  .home-page-left-container {
+  .home-page__introduction {
     margin-top: $base-margin-top;
     align-items: start;
   }
 
-  .home-page-title {
+  .home-page__introduction__name {
     font-size: $font-size-h2-mobile-md;
+    text-align: start;
   }
 
-  .home-page-right-container {
+  .home-page__career {
     font-size: 2.5rem; /* Come back */
     align-items: flex-end;
   }
 }
 
 @media (min-width: 1900px) {
-  .home-page-left-container {
+  .home-page__introduction {
     margin-top: $base-margin-top;
     align-items: start;
   }
 
-  .home-page-title {
+  .home-page__introduction__name {
     font-size: $font-size-h2-mobile-lg;
+    text-align: start;
   }
-  .home-page-right-container {
+  .home-page__career {
     margin-top: $base-margin-top * 10;
     font-size: 3.5rem;
     align-items: flex-end;
   }
 
-  .home-page-small-name {
+  .home-page__introduction__hi {
     font-size: $font-size-h3-mobile;
   }
 }
