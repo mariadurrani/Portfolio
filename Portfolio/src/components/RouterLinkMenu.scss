@@ -1,4 +1,5 @@
 $color-white: #ffff;
+$base-gap: 20px;
 
 .menu-links {
   display: flex;
@@ -8,12 +9,12 @@ $color-white: #ffff;
   text-align: center;
   font-size: 60px;
   margin: 7rem;
-  gap: 2rem;
+  gap: $base-gap * 2;
   list-style: none;
   padding: 0;
-}
 
-.opened-menu-link {
-  text-decoration: none;
-  color: $color-white;
+  .opened-menu-link {
+    text-decoration: none;
+    color: $color-white;
+  }
 }

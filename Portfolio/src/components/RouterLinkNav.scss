@@ -1,0 +1,33 @@
+$color-black: #1e1e1e;
+$base-gap: 20px;
+
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 25px;
+  gap: $base-gap * 3;
+  list-style: none;
+
+  @media (max-width: 767px) {
+    display: none;
+  }
+
+  @media (min-width: 1025px) {
+    gap: $base-gap * 4;
+  }
+
+  @media (min-width: 1201px) {
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  @media (min-width: 1900px) {
+    font-size: 35px;
+  }
+
+  .navbar-link {
+    text-decoration: none;
+    color: $color-black;
+  }
+}

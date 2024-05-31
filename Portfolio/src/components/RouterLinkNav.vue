@@ -1,28 +1,16 @@
-<script setup lang="ts">
-import { RouterLink } from 'vue-router'
-
-</script>
-
 <template>
     <div>
         <ul class="navbar">
-            <!-- Todo: We need to add a RouterLinkListItem component and pass props dynamically to it. -->
-            <li>
-                <RouterLink to="/" class="navbar-link">Home
-                </RouterLink>
-            </li>
-            <li>
-                <RouterLink to="/work" class="navbar-link">Work</RouterLink>
-            </li>
-            <li>
-                <RouterLink to=" /about" class="navbar-link">About</RouterLink>
-            </li>
-            <li>
-                <RouterLink to="/contact" class="navbar-link">Contact
-                </RouterLink>
-            </li>
+            <RouterLinkListItem to="/" className="navbar-link" text="Home" />
+            <RouterLinkListItem to="/work" className="navbar-link" text="Work" />
+            <RouterLinkListItem to="/about" className="navbar-link" text="About" />
+            <RouterLinkListItem to="/contact" className="navbar-link" text="Contact" />
         </ul>
     </div>
 </template>
 
-<style src="../assets/RouterLinkListItemNav.scss"></style>
+<style src="../assets/RouterLinkNav.scss"></style>
+
+<script setup lang="ts">
+import RouterLinkListItem from './RouterLinkListItem.vue';
+</script>
