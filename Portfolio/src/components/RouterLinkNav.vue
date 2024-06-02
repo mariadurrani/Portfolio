@@ -38,7 +38,9 @@ import { RouterLink } from 'vue-router'
 .navbar-link {
     text-decoration: none;
     color: #1e1e1e;
+    text-transform: lowercase;
 }
+
 
 @media (max-width: 767px) {
     .navbar {
