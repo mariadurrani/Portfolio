@@ -1,9 +1,11 @@
 @import './Variables.scss';
 
-.home-page__wrapper {
-  font-family: $font-family-primary;
-  text-transform: uppercase;
-  letter-spacing: $letter-spacing;
+.home-page {
+  &__wrapper {
+    font-family: $font-family-primary;
+    text-transform: uppercase;
+    letter-spacing: $letter-spacing;
+  }
 }
 
 .home-page__introduction {
