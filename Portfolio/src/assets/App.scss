@@ -2,37 +2,39 @@
 
 html,
 body {
-  background-color: $color-pink-primary;
+  background-color: $bg-color-pink-primary;
   font-family: $font-family-primary;
 }
 
-.menu-button-container {
-  display: flex;
-  flex-direction: column;
-  background-color: transparent;
-  border: none;
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 1000;
-
-  .menu-button {
+.menu-button {
+  &__container {
     display: flex;
-    width: $width-small;
-    height: 3rem;
+    flex-direction: column;
+    background-color: transparent;
+    border: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
 
-    @media (min-width: 768px) {
-      display: none;
+    &__item {
+      display: flex;
+      width: $base-width * 2;
+      height: 3rem;
+
+      @media (min-width: 768px) {
+        display: none;
+      }
     }
   }
 }
 
-.opened-menu {
+.menu__mobile__opened {
   display: block;
-  text-transform: $text-transform-uppercase;
-  background-color: $color-pink-primary;
+  text-transform: uppercase;
+  background-color: $bg-color-pink-primary;
   color: $color-white;
-  margin: $margin-zero;
+  margin: 0;
   position: fixed;
   width: 100%;
   height: 100%;
@@ -43,17 +45,5 @@ body {
 
   @media (min-width: 768px) {
     display: none;
-  }
-
-  .menu-fullname {
-    font-size: $font-size-small;
-    color: $color-white;
-    text-align: center;
-    margin: $margin-medium;
-
-    .menu-firstName,
-    .menu-lastName {
-      margin: $margin-zero;
-    }
   }
 }

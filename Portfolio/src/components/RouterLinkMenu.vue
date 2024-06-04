@@ -1,45 +1,16 @@
-<script setup lang="ts">
-import { RouterLink } from 'vue-router'
-
-</script>
-
 <template>
     <div>
         <ul class="menu-links">
-            <!-- Todo: We need to add a RouterLinkListItem component and pass props dynamically to it. -->
-            <li>
-                <RouterLink to="/" class="opened-menu-link">Home
-                </RouterLink>
-            </li>
-            <li>
-                <RouterLink to="/work" class="opened-menu-link">Work</RouterLink>
-            </li>
-            <li>
-                <RouterLink to=" /about" class="opened-menu-link">About</RouterLink>
-            </li>
-            <li>
-                <RouterLink to="/contact" class="opened-menu-link">Contact</RouterLink>
-            </li>
+            <RouterLinkListItem to="/" className="opened-menu-link" text="Home" />
+            <RouterLinkListItem to="/work" className="opened-menu-link" text="Work" />
+            <RouterLinkListItem to="/about" className="opened-menu-link" text="About" />
+            <RouterLinkListItem to="/contact" className="opened-menu-link" text="Contact" />
         </ul>
     </div>
 </template>
 
-<style>
-.menu-links {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    font-size: 60px;
-    margin: 7rem;
-    gap: 2rem;
-    list-style: none;
-    padding: 0;
-}
+<style src="../assets/RouterLinkMenu.scss"></style>
 
-.opened-menu-link {
-    text-decoration: none;
-    color: #ffff;
-}
-</style>
+<script setup lang="ts">
+import RouterLinkListItem from './RouterLinkListItem.vue';
+</script>

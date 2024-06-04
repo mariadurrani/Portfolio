@@ -1,0 +1,135 @@
+@import 'Variables.scss';
+
+.work-page {
+  &__wrapper {
+    color: $color-black;
+    display: flex;
+    flex-direction: column;
+
+    @media (min-width: 1201px) and (max-width: 1899px) {
+      flex-direction: row;
+      justify-content: space-between;
+      padding-right: 20px;
+    }
+
+    @media (min-width: 1900px) {
+      flex-direction: row;
+      padding-right: 20px;
+      height: 80vh;
+      justify-content: space-between;
+    }
+  }
+
+  &__text-container {
+    display: flex;
+    flex-direction: column;
+    margin: 7rem 2rem;
+
+    @media (min-width: 768px) and (max-width: 1200px) {
+      align-items: center;
+      text-align: center;
+      margin: 0;
+    }
+
+    @media (min-width: 1201px) and (max-width: 1899px) {
+      justify-content: flex-end;
+      font-size: $base-font-size * 1.2;
+      width: $base-width * 30;
+      margin: 0;
+    }
+
+    @media (min-width: 1900px) {
+      justify-content: flex-end;
+      width: $base-width * 40;
+      margin-bottom: 5rem;
+    }
+
+    &__title {
+      text-transform: uppercase;
+      font-weight: 600;
+
+      @media (min-width: 1900px) {
+        font-size: 30px;
+      }
+    }
+
+    &__desc {
+      margin: 0;
+      line-height: 1.7rem;
+
+      @media (min-width: 768px) and (max-width: 1200px) {
+        width: $base-width * 30;
+      }
+
+      @media (min-width: 1900px) {
+        font-size: $base-font-size * 1.2;
+      }
+    }
+  }
+  &__projects-container {
+    display: flex;
+
+    @media (min-width: 768px) and (max-width: 1200px) {
+      justify-content: center;
+      margin-top: $base-margin-top * 5;
+    }
+
+    @media (min-width: 1201px) {
+      justify-content: flex-end;
+    }
+
+    &__projects {
+      display: flex;
+      flex-direction: column;
+      gap: $gap-sm;
+      list-style: none;
+      text-transform: uppercase;
+
+      @media (min-width: 768px) and (max-width: 1200px) {
+        justify-content: center;
+        align-items: center;
+        padding: 0;
+      }
+
+      @media (min-width: 1201px) and (max-width: 1899px) {
+      }
+
+      @media (min-width: 1900px) {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+    }
+  }
+
+  &__project {
+    display: flex;
+    flex-direction: column;
+    gap: $gap-xs;
+
+    &__project-label {
+      font-family: 'Raleway';
+      font-weight: 800;
+      letter-spacing: $letter-spacing-xs;
+      font-size: $base-font-size * 2.5;
+
+      @media (min-width: 1201px) and (max-width: 1899px) {
+        font-size: $font-size-md;
+      }
+
+      @media (min-width: 1900px) {
+        font-size: $font-size-md;
+      }
+    }
+
+    &__project-text {
+      @media (min-width: 1201px) and (max-width: 1899px) {
+        font-size: $base-font-size * 1.5;
+      }
+
+      @media (min-width: 1900px) {
+        font-size: $font-size-xs;
+      }
+    }
+  }
+}

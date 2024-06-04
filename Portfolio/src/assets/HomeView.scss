@@ -1,87 +1,99 @@
 @import './Variables.scss';
 
-.home-wrapper {
-  font-family: $font-family-primary;
-  text-transform: $text-transform-uppercase;
-  letter-spacing: $letter-spacing;
+.home-page {
+  &__wrapper {
+    font-family: $font-family-primary;
+    text-transform: uppercase;
+    letter-spacing: $letter-spacing-sm;
 
-  @media (min-width: 768px) and (max-width: 1024px) {
-    padding: $padding-small;
+    @media (min-width: 768px) and (max-width: 1024px) {
+      padding: $base-padding;
+    }
   }
 
-  .home-page-left-container {
+  &__introduction {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: $color-black;
-    margin-top: $margin-top-large;
+    margin-top: $base-margin-top * 10;
 
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 768px) and (max-width: 1280px) {
       align-items: start;
-      margin-top: $margin-top-medium;
-    }
-
-    @media (min-width: 1025px) and (max-width: 1280px) {
-      align-items: start;
-      margin-top: 4.5rem;
+      margin-top: $base-margin-top * 5;
     }
 
     @media (min-width: 1281px) {
-      margin-top: $margin-top-xsmall;
+      margin-top: $base-margin-top;
       align-items: start;
     }
 
-    .home-page-small-name,
-    .home-page-title {
-      margin: $margin-zero;
+    &__hi {
+      text-transform: lowercase;
+      margin: 0;
+      font-size: $font-size-h3-mobile;
+
+      @media (min-width: 1900px) {
+        font-size: $font-size-h3-mobile;
+      }
     }
 
-    .home-page-title {
-      font-size: $font-size-medium;
+    &__name {
+      font-size: $font-size-h2-mobile;
       text-align: center;
-      width: $width-xlarge;
+      font-weight: 800;
+      width: $base-width * 15;
+      margin: 0;
 
-      @media (min-width: 768px) and (max-width: 1899px) {
-        font-size: $font-size-large;
-      }
-
-      @media (min-width: 1900px) {
-        font-size: $font-size-xlarge;
-      }
-    }
-
-    .home-page-small-name {
-      font-size: $font-size-small;
-
-      @media (min-width: 1900px) {
-        font-size: $font-size-small;
+      @media (min-width: 768px) {
+        font-size: $font-size-h2-mobile-md;
+        text-align: start;
       }
     }
   }
 
-  .home-page-right-container {
-    font-size: $font-size-xsmall;
+  &__career {
     justify-content: center;
     align-items: center;
     display: flex;
     flex-direction: column;
     color: $color-black;
-    margin-top: $margin-top-medium;
+    margin-top: $base-margin-top * 5;
 
     @media (min-width: 768px) and (max-width: 1899px) {
-      font-size: $font-size-small;
+      font-size: 2.5rem; /* Come back */
       align-items: flex-end;
     }
 
     @media (min-width: 1900px) {
-      margin-top: $margin-top-large;
-      font-size: 2.5rem;
+      margin-top: $base-margin-top * 10;
+      font-size: 3.5rem;
       align-items: flex-end;
     }
 
-    .home-page-firstName,
-    .home-page-lastName {
-      margin: $margin-zero;
+    &__p {
+      font-size: 2rem;
+      text-transform: lowercase;
+      margin: 0;
     }
+
+    &__title {
+      font-weight: 800;
+      font-size: 3rem;
+      width: $base-width * 15;
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: 1900px) {
+  .home-page__introduction {
+    margin-top: $base-margin-top;
+    align-items: start;
+  }
+
+  .home-page__introduction__name {
+    font-size: $font-size-h2-mobile-lg;
+    text-align: start;
   }
 }

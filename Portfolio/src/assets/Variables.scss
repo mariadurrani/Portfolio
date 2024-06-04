@@ -1,23 +1,26 @@
-$margin-top-xsmall: 1rem;
-$margin-top-medium: 5rem;
-$margin-top-large: 10rem;
-$margin-zero: 0;
-$margin-medium: 4rem;
-$padding-small: 10px;
-$width-small: 2rem;
-$width-xlarge: 15rem;
+// Base Variables
+$bg-color-pink-primary: #d4abb2;
+$font-family-primary: 'Raleway';
+$base-margin-top: 1rem;
+$base-width: 1rem;
+$base-padding: 10px;
+$base-font-size: 1rem;
+
+// Gap Variables
+$gap-xs: 1rem;
+$gap-sm: 3rem;
+$gap-md: 4rem;
+$gap-lg: 5rem;
 
 // Color Variables
-$color-pink-primary: #d4abb2;
 $color-black: #1e1e1e;
 $color-white: #ffff;
 
 // Font Variables
-$font-family-primary: 'Raleway';
-$font-size-xsmall: 1.5rem;
-$font-size-small: 2rem;
-$font-size-medium: 3rem;
-$font-size-large: 4rem;
-$font-size-xlarge: 5rem;
-$letter-spacing: -2px;
-$text-transform-uppercase: uppercase;
+$font-size-xs: 2rem;
+$font-size-sm: 3rem;
+$font-size-md: 4rem;
+$font-size-lg: 5rem;
+
+$letter-spacing-xs: -1px;
+$letter-spacing-sm: -2px;
