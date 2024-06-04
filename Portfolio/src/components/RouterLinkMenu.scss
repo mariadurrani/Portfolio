@@ -11,9 +11,9 @@
   gap: $gap-sm;
   list-style: none;
   padding: 0;
-}
 
-.opened-menu-link {
-  text-decoration: none;
-  color: $color-white;
+  .opened-menu-link {
+    text-decoration: none;
+    color: $color-white;
+  }
 }

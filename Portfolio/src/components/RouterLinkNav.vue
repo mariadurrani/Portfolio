@@ -1,7 +1,3 @@
-<script setup lang="ts">
-import RouterLinkListItem from './RouterLinkListItem.vue';
-</script>
-
 <template>
     <div>
         <ul class="navbar">
@@ -14,3 +10,7 @@ import RouterLinkListItem from './RouterLinkListItem.vue';
 </template>
 
 <style src="../assets/RouterLinkNav.scss"></style>
+
+<script setup lang="ts">
+import RouterLinkListItem from './RouterLinkListItem.vue';
+</script>
