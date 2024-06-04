@@ -19,10 +19,6 @@
 
         <nav v-if="isMenuShown" class="opened-menu">
             <RouterLinkMenu />
-            <div class="menu-fullname">
-                <h1 class="menu-firstName">{{ homeViewContent.firstName }}</h1>
-                <h1 class="menu-lastName">{{ homeViewContent.lastName }}</h1>
-            </div>
         </nav>
         <RouterView />
     </Wrapper>

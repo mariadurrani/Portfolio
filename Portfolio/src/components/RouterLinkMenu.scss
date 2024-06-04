@@ -1,5 +1,4 @@
-$color-white: #ffff;
-$base-gap: 20px;
+@import 'Variables.scss';
 
 .menu-links {
   display: flex;
@@ -7,9 +6,9 @@ $base-gap: 20px;
   justify-content: center;
   align-items: center;
   text-align: center;
-  font-size: 60px;
+  font-size: $base-font-size * 3.7;
   margin: 7rem;
-  gap: $base-gap * 2;
+  gap: $gap-sm;
   list-style: none;
   padding: 0;
 

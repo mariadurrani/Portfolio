@@ -1,0 +1,115 @@
+@import './Variables.scss';
+
+.home-page {
+  &__wrapper {
+    font-family: $font-family-primary;
+    text-transform: uppercase;
+    letter-spacing: $letter-spacing-sm;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      padding: $base-padding;
+    }
+  }
+
+  &__career-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    color: $color-black;
+    margin-top: $base-margin-top * 10;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      align-items: start;
+      margin-top: $base-margin-top * 5;
+    }
+
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      align-items: start;
+      margin-top: 4.5rem;
+    }
+
+    @media (min-width: 1281px) and (max-width: 1899px) {
+      margin-top: $base-margin-top;
+      align-items: start;
+    }
+
+    @media (min-width: 1900px) {
+      margin-top: $base-margin-top;
+      align-items: start;
+    }
+
+    &__first-name {
+      font-size: $font-size-xs;
+
+      @media (min-width: 1900px) {
+        font-size: $font-size-xs;
+      }
+    }
+
+    &__title {
+      font-size: $font-size-sm;
+      text-align: center;
+
+      @media (min-width: 533px) {
+        width: $base-width * 15;
+      }
+
+      @media (min-width: 768px) and (max-width: 1024px) {
+        font-size: $font-size-md;
+      }
+
+      @media (min-width: 1025px) and (max-width: 1280px) {
+        font-size: $font-size-md;
+      }
+
+      @media (min-width: 1281px) and (max-width: 1899px) {
+        font-size: $font-size-md;
+      }
+
+      @media (min-width: 1900px) {
+        font-size: $font-size-lg;
+      }
+    }
+
+    &__first-name,
+    &__title {
+      margin: 0;
+    }
+  }
+
+  &__fullname-container {
+    font-size: 2rem; /* Come back */
+    justify-content: center;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    color: $color-black;
+    margin-top: $base-margin-top * 5;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      font-size: 2.5rem; /* Come back */
+      align-items: flex-end;
+    }
+
+    @media (min-width: 1025px) and (max-width: 1280px) {
+      font-size: 2.5rem; /* Come back */
+      align-items: flex-end;
+    }
+
+    @media (min-width: 1281px) and (max-width: 1899px) {
+      font-size: 2.5rem; /* Come back */
+      align-items: flex-end;
+    }
+
+    @media (min-width: 1900px) {
+      margin-top: $base-margin-top * 10;
+      font-size: 3.5rem;
+      align-items: flex-end;
+    }
+
+    &__firstName,
+    &__lastName {
+      margin: 0;
+    }
+  }
+}
