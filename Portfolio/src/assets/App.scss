@@ -6,24 +6,30 @@ body {
   font-family: $font-family-primary;
 }
 
-.menu-button-container {
-  display: flex;
-  flex-direction: column;
-  background-color: transparent;
-  border: none;
-  position: fixed;
-  top: 20px;
-  right: 20px;
-  z-index: 1000;
-}
-
 .menu-button {
-  display: flex;
-  width: $base-width * 2;
-  height: 3rem;
+  &__container {
+    display: flex;
+    flex-direction: column;
+    background-color: transparent;
+    border: none;
+    position: fixed;
+    top: 20px;
+    right: 20px;
+    z-index: 1000;
+
+    &__item {
+      display: flex;
+      width: $base-width * 2;
+      height: 3rem;
+
+      @media (min-width: 768px) {
+        display: none;
+      }
+    }
+  }
 }
 
-.opened-menu {
+.menu__mobile__opened {
   display: block;
   text-transform: uppercase;
   background-color: $bg-color-pink-primary;
@@ -36,32 +42,8 @@ body {
   left: 0;
   right: 0;
   bottom: 0;
-}
 
-@media (min-width: 768px) and (max-width: 1024px) {
-  /* Small screens, Laptops */
-  .menu-button,
-  .opened-menu {
-    display: none;
-  }
-}
-@media (min-width: 1025px) and (max-width: 1200px) {
-  /* Desktops, Large screens */
-  .menu-button,
-  .opened-menu {
-    display: none;
-  }
-}
-@media (min-width: 1201px) and (max-width: 1899px) {
-  /* Extra large screens, TV */
-  .menu-button,
-  .opened-menu {
-    display: none;
-  }
-}
-@media (min-width: 1900px) {
-  .menu-button,
-  .opened-menu {
+  @media (min-width: 768px) {
     display: none;
   }
 }

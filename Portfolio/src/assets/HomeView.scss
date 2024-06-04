@@ -11,74 +11,48 @@
     }
   }
 
-  &__career-container {
+  &__introduction {
     display: flex;
     flex-direction: column;
     align-items: center;
     color: $color-black;
     margin-top: $base-margin-top * 10;
 
-    @media (min-width: 768px) and (max-width: 1024px) {
+    @media (min-width: 768px) and (max-width: 1280px) {
       align-items: start;
       margin-top: $base-margin-top * 5;
     }
 
-    @media (min-width: 1025px) and (max-width: 1280px) {
-      align-items: start;
-      margin-top: 4.5rem;
-    }
-
-    @media (min-width: 1281px) and (max-width: 1899px) {
+    @media (min-width: 1281px) {
       margin-top: $base-margin-top;
       align-items: start;
     }
 
-    @media (min-width: 1900px) {
-      margin-top: $base-margin-top;
-      align-items: start;
-    }
-
-    &__first-name {
-      font-size: $font-size-xs;
-
-      @media (min-width: 1900px) {
-        font-size: $font-size-xs;
-      }
-    }
-
-    &__title {
-      font-size: $font-size-sm;
-      text-align: center;
-
-      @media (min-width: 533px) {
-        width: $base-width * 15;
-      }
-
-      @media (min-width: 768px) and (max-width: 1024px) {
-        font-size: $font-size-md;
-      }
-
-      @media (min-width: 1025px) and (max-width: 1280px) {
-        font-size: $font-size-md;
-      }
-
-      @media (min-width: 1281px) and (max-width: 1899px) {
-        font-size: $font-size-md;
-      }
-
-      @media (min-width: 1900px) {
-        font-size: $font-size-lg;
-      }
-    }
-
-    &__first-name,
-    &__title {
+    &__hi {
+      text-transform: lowercase;
       margin: 0;
+      font-size: $font-size-h3-mobile;
+
+      @media (min-width: 1900px) {
+        font-size: $font-size-h3-mobile;
+      }
+    }
+
+    &__name {
+      font-size: $font-size-h2-mobile;
+      text-align: center;
+      font-weight: 800;
+      width: $base-width * 15;
+      margin: 0;
+
+      @media (min-width: 768px) {
+        font-size: $font-size-h2-mobile-md;
+        text-align: start;
+      }
     }
   }
 
-  &__fullname-container {
-    font-size: 2rem; /* Come back */
+  &__career {
     justify-content: center;
     align-items: center;
     display: flex;
@@ -86,17 +60,7 @@
     color: $color-black;
     margin-top: $base-margin-top * 5;
 
-    @media (min-width: 768px) and (max-width: 1024px) {
-      font-size: 2.5rem; /* Come back */
-      align-items: flex-end;
-    }
-
-    @media (min-width: 1025px) and (max-width: 1280px) {
-      font-size: 2.5rem; /* Come back */
-      align-items: flex-end;
-    }
-
-    @media (min-width: 1281px) and (max-width: 1899px) {
+    @media (min-width: 768px) and (max-width: 1899px) {
       font-size: 2.5rem; /* Come back */
       align-items: flex-end;
     }
@@ -107,9 +71,29 @@
       align-items: flex-end;
     }
 
-    &__firstName,
-    &__lastName {
+    &__p {
+      font-size: 2rem;
+      text-transform: lowercase;
       margin: 0;
     }
+
+    &__title {
+      font-weight: 800;
+      font-size: 3rem;
+      width: $base-width * 15;
+      margin: 0;
+    }
+  }
+}
+
+@media (min-width: 1900px) {
+  .home-page__introduction {
+    margin-top: $base-margin-top;
+    align-items: start;
+  }
+
+  .home-page__introduction__name {
+    font-size: $font-size-h2-mobile-lg;
+    text-align: start;
   }
 }
