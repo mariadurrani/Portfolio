@@ -24,7 +24,7 @@
     </Wrapper>
 </template>
 
-<style src="./assets/App.css"></style>
+<style src="./assets/App.scss"></style>
 
 <script setup lang="ts">
 import { ref } from 'vue';
