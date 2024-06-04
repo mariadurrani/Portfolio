@@ -1,15 +1,3 @@
-<script setup lang="ts">
-import { ref } from 'vue';
-import { RouterView } from 'vue-router'
-import { homeViewContent } from './views/home-view-content';
-import Wrapper from "@/Wrapper.vue";
-import RouterLinkNav from './components/RouterLinkNav.vue';
-import RouterLinkMenu from './components/RouterLinkMenu.vue';
-
-const isMenuShown = ref(false)
-
-</script>
-
 <template>
     <Wrapper>
         <header>
@@ -36,4 +24,15 @@ const isMenuShown = ref(false)
     </Wrapper>
 </template>
 
-<style src="./assets/App.scss"></style>
+<style src="./assets/App.css"></style>
+
+<script setup lang="ts">
+import { ref } from 'vue';
+import { RouterView } from 'vue-router'
+import { homeViewContent } from './content/home-view-content';
+import Wrapper from "@/Wrapper.vue";
+import RouterLinkNav from './components/RouterLinkNav.vue';
+import RouterLinkMenu from './components/RouterLinkMenu.vue';
+
+const isMenuShown = ref(false)
+</script>

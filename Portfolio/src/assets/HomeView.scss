@@ -4,7 +4,7 @@
   &__wrapper {
     font-family: $font-family-primary;
     text-transform: uppercase;
-    letter-spacing: $letter-spacing;
+    letter-spacing: $letter-spacing-sm;
 
     @media (min-width: 768px) and (max-width: 1024px) {
       padding: $base-padding;
@@ -60,12 +60,7 @@
     color: $color-black;
     margin-top: $base-margin-top * 5;
 
-    @media (min-width: 768px) and (max-width: 1024px) {
-      font-size: 2.5rem; /* Come back */
-      align-items: flex-end;
-    }
-
-    @media (min-width: 1025px) and (max-width: 1899px) {
+    @media (min-width: 768px) and (max-width: 1899px) {
       font-size: 2.5rem; /* Come back */
       align-items: flex-end;
     }

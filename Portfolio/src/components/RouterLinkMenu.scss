@@ -1,0 +1,19 @@
+@import 'Variables.scss';
+
+.menu-links {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  font-size: $base-font-size * 3.7;
+  margin: 7rem;
+  gap: $gap-sm;
+  list-style: none;
+  padding: 0;
+
+  .opened-menu-link {
+    text-decoration: none;
+    color: $color-white;
+  }
+}

@@ -1,9 +1,3 @@
-<script setup lang="ts">
-import Wrapper from "@/Wrapper.vue";
-import { homeViewContent } from "./home-view-content";
-;
-</script>
-
 <template>
     <Wrapper>
         <header class="home-page__wrapper">
@@ -21,3 +15,9 @@ import { homeViewContent } from "./home-view-content";
 </template>
 
 <style src="../assets/HomeView.scss"></style>
+
+
+<script setup lang="ts">
+import Wrapper from "@/Wrapper.vue";
+import { homeViewContent } from "../content/home-view-content";
+</script>

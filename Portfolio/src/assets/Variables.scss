@@ -4,16 +4,23 @@ $font-family-primary: 'Raleway';
 $base-margin-top: 1rem;
 $base-width: 1rem;
 $base-padding: 10px;
+$base-font-size: 1rem;
+
+// Gap Variables
+$gap-xs: 1rem;
+$gap-sm: 3rem;
+$gap-md: 4rem;
+$gap-lg: 5rem;
 
 // Color Variables
 $color-black: #1e1e1e;
 $color-white: #ffff;
 
 // Font Variables
-$font-size-h2-mobile: 3rem;
-$font-size-h2-mobile-md: 4rem;
-$font-size-h2-mobile-lg: 5rem;
+$font-size-xs: 2rem;
+$font-size-sm: 3rem;
+$font-size-md: 4rem;
+$font-size-lg: 5rem;
 
-$font-size-h3-mobile: 2rem;
-
-$letter-spacing: -2px;
+$letter-spacing-xs: -1px;
+$letter-spacing-sm: -2px;
