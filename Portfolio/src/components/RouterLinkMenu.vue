@@ -9,7 +9,7 @@
     </div>
 </template>
 
-<style src="../assets/RouterLinkMenu.scss"></style>
+<style src="./RouterLinkMenu.scss"></style>
 
 <script setup lang="ts">
 import RouterLinkListItem from './RouterLinkListItem.vue';

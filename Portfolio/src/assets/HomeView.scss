@@ -1,4 +1,4 @@
-@import './Variables.scss';
+@import '../assets/Variables.scss';
 
 .home-page {
   &__wrapper {
@@ -31,22 +31,22 @@
     &__hi {
       text-transform: lowercase;
       margin: 0;
-      font-size: $font-size-h3-mobile;
+      font-size: 30px;
 
       @media (min-width: 1900px) {
-        font-size: $font-size-h3-mobile;
+        font-size: 30px;
       }
     }
 
     &__name {
-      font-size: $font-size-h2-mobile;
+      font-size: 20px;
       text-align: center;
       font-weight: 800;
       width: $base-width * 15;
       margin: 0;
 
       @media (min-width: 768px) {
-        font-size: $font-size-h2-mobile-md;
+        font-size: 30px;
         text-align: start;
       }
     }
@@ -93,7 +93,7 @@
   }
 
   .home-page__introduction__name {
-    font-size: $font-size-h2-mobile-lg;
+    font-size: 30px;
     text-align: start;
   }
 }
