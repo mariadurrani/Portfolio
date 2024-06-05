@@ -33,7 +33,7 @@
 
     @media (min-width: 1201px) and (max-width: 1899px) {
       justify-content: flex-end;
-      font-size: $base-font-size * 1.2;
+      font-size: $font-size-xs;
       width: $base-width * 30;
       margin: 0;
     }
@@ -114,21 +114,21 @@
       font-size: $base-font-size * 2.5;
 
       @media (min-width: 1201px) and (max-width: 1899px) {
-        font-size: $font-size-md;
+        font-size: $font-size-lg;
       }
 
       @media (min-width: 1900px) {
-        font-size: $font-size-md;
+        font-size: $font-size-lg;
       }
     }
 
     &__project-text {
       @media (min-width: 1201px) and (max-width: 1899px) {
-        font-size: $base-font-size * 1.5;
+        font-size: $base-font-size * 25;
       }
 
       @media (min-width: 1900px) {
-        font-size: $font-size-xs;
+        font-size: $font-size-sm;
       }
     }
   }
