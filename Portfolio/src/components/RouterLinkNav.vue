@@ -1,4 +1,5 @@
 <template>
+
     <div>
         <ul class="navbar">
             <RouterLinkListItem to="/" className="navbar-link" text="Home" />

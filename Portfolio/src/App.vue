@@ -29,10 +29,11 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import { RouterView } from 'vue-router'
-import { homeViewContent } from './content/home-view-content';
 import Wrapper from "@/Wrapper.vue";
 import RouterLinkNav from './components/RouterLinkNav.vue';
 import RouterLinkMenu from './components/RouterLinkMenu.vue';
+
+
 
 const isMenuShown = ref(false)
 </script>
