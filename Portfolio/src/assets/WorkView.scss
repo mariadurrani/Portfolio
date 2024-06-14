@@ -10,6 +10,7 @@
       flex-direction: row;
       justify-content: space-between;
       padding-right: 20px;
+      margin: 2rem;
     }
 
     @media (min-width: 1900px) {
@@ -28,6 +29,7 @@
     @media (min-width: 768px) and (max-width: 1200px) {
       align-items: center;
       text-align: center;
+      font-size: $font-size-xs;
       margin: 0;
     }
 
@@ -62,7 +64,7 @@
       }
 
       @media (min-width: 1900px) {
-        font-size: $base-font-size * 1.2;
+        font-size: $base-font-size * 20;
       }
     }
   }
@@ -111,7 +113,7 @@
       font-family: 'Raleway';
       font-weight: 800;
       letter-spacing: $letter-spacing-xs;
-      font-size: $base-font-size * 2.5;
+      font-size: $base-font-size * 40;
 
       @media (min-width: 1201px) and (max-width: 1899px) {
         font-size: $font-size-lg;
@@ -130,6 +132,18 @@
       @media (min-width: 1900px) {
         font-size: $font-size-sm;
       }
+    }
+  }
+}
+
+.dark {
+  .work-page {
+    &__text-container {
+      color: $color-white;
+    }
+
+    &__projects-container {
+      color: $color-white;
     }
   }
 }

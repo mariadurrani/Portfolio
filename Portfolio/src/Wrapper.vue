@@ -30,9 +30,11 @@ export default {
     display: flex;
     flex-direction: column;
     background-color: $bg-color-pink-primary;
+    width: 100%;
 
     @media (min-width: 768px) and (max-width: 1899px) {
         margin: 2rem;
+
     }
 
     @media (min-width: 1900px) {
