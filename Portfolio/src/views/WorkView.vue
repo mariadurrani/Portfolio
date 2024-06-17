@@ -1,5 +1,4 @@
 <script setup lang="ts">
-import Wrapper from '@/Wrapper.vue';
 
 const projects = [
     { id: 1, label: "Project Name", text: "Year" },
