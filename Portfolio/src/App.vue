@@ -29,10 +29,9 @@
 <script setup lang="ts">
 import { ref } from 'vue';
 import { RouterView } from 'vue-router'
-import Wrapper from "@/Wrapper.vue";
 import RouterLinkNav from './components/RouterLinkNav.vue';
 import RouterLinkMenu from './components/RouterLinkMenu.vue';
-
+import Wrapper from "./components/Wrapper.vue";
 
 
 const isMenuShown = ref(false)
