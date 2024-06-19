@@ -1,0 +1,32 @@
+@import 'Variables.scss';
+
+.contact-page {
+  &__wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 8rem;
+  }
+  &__text {
+    color: $color-black;
+
+    @media (min-width: 1024px) {
+      width: 70%;
+    }
+
+    &__contact-p {
+      font-size: 65px;
+      text-transform: uppercase;
+      font-weight: 800;
+    }
+
+    &__hr {
+      border: 0.5px solid $color-black;
+    }
+
+    &__contact-p,
+    &__hr {
+      margin: 2rem;
+    }
+  }
+}

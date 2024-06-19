@@ -1,5 +1,16 @@
 <template>
-    <div>
+    <div class="contact-page__wrapper">
+        <div class="contact-page__text">
+            <p class="contact-page__text__contact-p">Contact</p>
+            <hr class="contact-page__text__hr">
+            <div class="contact-page__email-container">
+                <p>E-MAIL</p>
+                <a href="mailto:maria_durrani@hotmail.com">maria_durrani@hotmail.com</a>
+            </div>
+
+        </div>
+    </div>
+    <!-- <div>
         <form @submit.prevent="handleSubmit">
             <div>
                 <label for="name">Name:</label>
@@ -19,8 +30,10 @@
             </div>
             <button type="submit">Submit</button>
         </form>
-    </div>
+    </div> -->
 </template>
+
+<style src="../assets/ContactView.scss"></style>
 
 <script>
 import { reactive } from 'vue';
@@ -64,5 +77,3 @@ export default {
     }
 };
 </script>
-
-<style></style>
