@@ -14,7 +14,7 @@
 
   @media (min-width: 1025px) {
     gap: 80px;
-    margin: 2rem;
+    margin: $margin-sm;
   }
 
   @media (min-width: 1201px) {
@@ -24,6 +24,7 @@
 
   @media (min-width: 1900px) {
     font-size: 35px;
+    margin-top: 3rem;
   }
 
   .navbar-link {
