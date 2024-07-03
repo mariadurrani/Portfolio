@@ -9,12 +9,15 @@ body {
   &__container {
     display: flex;
     flex-direction: column;
-    background-color: transparent;
+    background-color: white;
     border: none;
     position: fixed;
-    top: 20px;
-    right: 20px;
     z-index: 1000;
+    padding: 4% 7% 3% 88%;
+
+    @media (min-width: 768px) {
+      display: none;
+    }
 
     &__item {
       display: flex;
@@ -31,8 +34,8 @@ body {
 .menu__mobile__opened {
   display: block;
   text-transform: uppercase;
-  background-color: $bg-color-pink-primary;
-  color: $color-white;
+  background: linear-gradient(#f7f7f7, #f3bc88);
+  color: $color-black;
   margin: 0;
   position: fixed;
   width: 100%;

@@ -1,22 +1,26 @@
 @import 'Variables.scss';
 
 @import url('https://fonts.googleapis.com/css2?family=Titillium+Web:ital,wght@0,200;0,300;0,400;0,600;0,700;0,900;1,200;1,300;1,400;1,600;1,700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Clicker+Script&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Square+Peg&display=swap');
 
 .contact-page {
   &__wrapper {
     display: flex;
+    height: 100%;
+    flex-direction: column;
     align-items: center;
-    justify-content: center;
+    justify-content: space-between;
     margin-top: $base-margin-top * 8;
-
-    @media (min-width: 1900px) {
-      margin-top: 20rem;
-    }
+    gap: 8rem;
+    overflow: auto;
   }
 
   &__content-area {
     color: $color-black;
     transition: ease-in-out 0.8s;
+    margin-top: 5rem;
 
     @media (min-width: 1024px) {
       width: 70%;
@@ -114,6 +118,84 @@
     text-decoration: none;
     color: $color-black;
     transition: ease-in-out 0.8s;
+  }
+
+  &__form-container {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-color: rgba(249, 249, 249, 0.632);
+    align-items: center;
+    justify-content: center;
+    padding-top: 1rem;
+    margin-top: 14rem;
+  }
+
+  &__form-headline {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 3rem;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    text-transform: lowercase;
+    color: #363739;
+  }
+
+  &__form-headline,
+  &__form-p {
+    margin: 0;
+  }
+
+  &__form-p {
+    font-family: 'Square Peg', cursive;
+    color: #878484;
+    font-weight: 100;
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+    bottom: 20px;
+  }
+
+  &__form {
+    display: flex;
+    flex-direction: column;
+    margin-right: 3rem;
+    font-family: 'Titillium Web', sans-serif;
+
+    &__send-message-p {
+      margin: 0;
+    }
+  }
+
+  &__input {
+    list-style-type: none;
+    padding: 0;
+
+    &__name,
+    &__email {
+      margin-bottom: 10px;
+      width: 100%;
+      padding: 15px 50px 13px 15px;
+      border: 1px solid #69727d;
+      font-family: 'Titillium Web', sans-serif;
+    }
+
+    &__message {
+      padding: 12px 50px 70px 15px;
+      width: 100%;
+      border: 1px solid #69727d;
+      font-family: 'Titillium Web', sans-serif;
+    }
+  }
+
+  &__submit-button {
+    width: 6rem;
+    padding: 10px;
+    color: #fff;
+    text-transform: uppercase;
+    background-color: #63666a;
+    font-family: 'Montserrat', sans-serif;
+    border: 0;
   }
 }
 
