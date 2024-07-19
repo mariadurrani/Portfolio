@@ -1,40 +1,13 @@
 <template>
     <div class="contact-page__wrapper">
 
-        <!-- <div class="contact-page__content-area">
-
-            <p class="contact-page__headline">Contact</p>
-            <hr class="contact-page__seperator">
-            <div class="contact-page__options">
-
-                <div class="contact-page__email">
-                    <p class="contact-page__email__text">E-mail</p>
-                    <a href="mailto:maria_durrani@hotmail.com"
-                        class="contact-page__email__link">maria_durrani@hotmail.com</a>
-                </div>
-
-                <div class="contact-page__social-media">
-
-                    <p class="contact-page__social-media__text">Social Media</p>
-                    <ul class="contact-page__social-media__links">
-                        <li><a href="https://www.linkedin.com/in/maria-durrani00/"
-                                class="contact-page__linkedin">LinkedIn</a></li>
-                        <li><a href="https://github.com/mariadurrani" class="contact-page__github">GitHub</a></li>
-                    </ul>
-
-                </div>
-
-            </div>
-        </div> -->
-
-
         <div class="contact-page__form-container">
 
             <div class="contact-page__form-text">
                 <h2 class="contact-page__form-headline">Contact Me</h2>
                 <p class="contact-page__form-p">I would love to hear from you</p> <!-- Change class -->
             </div>
-            <div class="contact-page__class">
+            <div class="contact-page__content">
                 <form @submit.prevent="handleSubmit" class="contact-page__form">
                     <p class="contact-page__form__send-message-p">Send me an Email</p>
                     <ul class="contact-page__input">
@@ -56,7 +29,6 @@
                 </form>
 
                 <div>
-
                     <div class="contact-page__phone">
                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="60">
                             <path fill="#4f5051"
@@ -93,7 +65,6 @@
                                     </svg></a></li>
                         </ul>
                     </div>
-
                 </div>
             </div>
 

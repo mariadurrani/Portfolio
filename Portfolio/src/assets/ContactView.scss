@@ -12,24 +12,76 @@
     flex-direction: column;
     align-items: center;
     justify-content: space-between;
-    margin-top: $base-margin-top * 8;
     gap: 8rem;
     overflow: auto;
   }
 
-  &__content-area {
-    color: $color-black;
-    transition: ease-in-out 0.8s;
-    margin-top: 5rem;
+  &__form-container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: #fff;
+    padding: 25px;
+    margin: 8rem 0 4rem 0;
+
+    @media (min-width: 768px) {
+      margin-top: 2rem;
+    }
 
     @media (min-width: 1024px) {
-      width: 70%;
-      font-size: 19px;
     }
+  }
 
-    @media (min-width: 1900px) {
-      font-size: 25px;
+  &__form-headline {
+    font-family: 'Bodoni Moda', serif;
+    font-size: 3rem;
+    font-weight: 200;
+    display: flex;
+    justify-content: center;
+    text-transform: lowercase;
+    color: #363739;
+    transition: ease-in-out 0.8s;
+
+    @media (min-width: 1024px) {
+      font-size: 4rem;
     }
+  }
+
+  &__form-headline,
+  &__form-p {
+    margin: 0;
+  }
+
+  &__form-p {
+    font-family: 'Square Peg', cursive;
+    color: #878484;
+    font-weight: 100;
+    text-align: center;
+    font-size: 40px;
+    position: relative;
+    bottom: 20px;
+
+    @media (min-width: 1024px) {
+      font-size: 4rem;
+      bottom: 30px;
+    }
+  }
+
+  &__content {
+    display: flex;
+    flex-direction: column;
+    margin-top: 20px;
+    transition: ease-in-out 0.8s;
+
+    @media (min-width: 1024px) {
+      flex-direction: row;
+      gap: 5rem;
+    }
+  }
+
+  @media (min-width: 1900px) {
+    font-size: 25px;
   }
 
   &__phone {
@@ -38,8 +90,7 @@
     font-family: 'Montserrat';
 
     @media (min-width: 1024px) {
-      justify-content: space-between;
-      align-items: center;
+      margin-top: 0;
     }
 
     &__text {
@@ -51,7 +102,12 @@
     &__link {
       text-decoration: none;
       color: $color-black;
-      font-size: 18px;
+      font-size: 22px;
+    }
+
+    &__text,
+    &__link {
+      margin: 5px;
       transition: ease-in-out 0.8s;
     }
   }
@@ -75,7 +131,12 @@
     &__link {
       text-decoration: none;
       color: $color-black;
-      font-size: 18px;
+      font-size: 22px;
+    }
+
+    &__text,
+    &__link {
+      margin: 5px;
       transition: ease-in-out 0.8s;
     }
   }
@@ -86,8 +147,6 @@
     margin-top: 20px;
 
     @media (min-width: 1024px) {
-      margin-right: 2rem;
-      justify-content: center;
     }
 
     &__links {
@@ -99,52 +158,19 @@
     }
   }
 
-  &__linkedin,
-  &__github {
-    transition: ease-in-out 0.8s;
-  }
-
-  &__form-container {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
-    align-items: center;
-    justify-content: center;
-  }
-
-  &__form-headline {
-    font-family: 'Bodoni Moda', serif;
-    font-size: 3rem;
-    font-weight: 200;
-    display: flex;
-    justify-content: center;
-    text-transform: lowercase;
-    color: #363739;
-  }
-
-  &__form-headline,
-  &__form-p {
-    margin: 0;
-  }
-
-  &__form-p {
-    font-family: 'Square Peg', cursive;
-    color: #878484;
-    font-weight: 100;
-    text-align: center;
-    font-size: 40px;
-    position: relative;
-    bottom: 20px;
-  }
-
   &__form {
     display: flex;
     flex-direction: column;
-    margin-right: 3rem;
     font-family: 'Titillium Web', sans-serif;
 
     &__send-message-p {
       margin: 0;
+      font-weight: 300;
+
+      @media (min-width: 1024px) {
+        font-size: 25px;
+        bottom: 30px;
+      }
     }
   }
 
@@ -153,23 +179,35 @@
     padding: 0;
 
     @media (min-width: 768px) {
-      width: 20rem;
+      width: 24rem;
+    }
+
+    @media (min-width: 1024px) {
+      width: 30rem;
     }
 
     &__name,
     &__email {
       margin-bottom: 10px;
-      width: 100%;
-      padding: 15px 50px 13px 15px;
+      width: 90%;
+      padding: 15px 0 13px 15px;
       border: 1px solid #69727d;
       font-family: 'Titillium Web', sans-serif;
+
+      @media (min-width: 1024px) {
+        font-size: 17px;
+      }
     }
 
     &__message {
-      padding: 12px 50px 70px 15px;
-      width: 100%;
+      padding: 12px 0 70px 15px;
+      width: 90%;
       border: 1px solid #69727d;
       font-family: 'Titillium Web', sans-serif;
+
+      @media (min-width: 1024px) {
+        font-size: 17px;
+      }
     }
   }
 
@@ -181,27 +219,39 @@
     background-color: #63666a;
     font-family: 'Montserrat', sans-serif;
     border: 0;
-  }
-
-  &__class {
-    display: flex;
-    flex-direction: column;
-    margin-top: 20px;
+    transition: ease-in-out 0.8s;
   }
 }
 
 .dark {
   .contact-page {
-    &__content-area,
     &__email__link,
-    &_social-media__links,
-    &__linkedin,
-    &__github {
+    &_social-media__links {
       color: $color-white;
     }
 
-    &__seperator {
-      border: 0.5px solid $color-white;
+    &__phone,
+    &__email {
+      &__text {
+        color: #5d5d5d;
+      }
+
+      &__link {
+        color: $color-black;
+      }
+    }
+
+    &__submit-button {
+      background-color: #5d5d5d;
+      color: #fff;
+    }
+
+    &__form-p {
+      color: #a7a7a7;
+    }
+
+    &__form-headline {
+      color: #4b4b4b;
     }
   }
 }

@@ -4,7 +4,9 @@
   font-family: $font-family-primary;
   display: flex;
   flex-direction: column;
-  background: linear-gradient(#f7f7f7 10%, #f3bc88 50%, #9c7ab9);
+  background: url(https://img.freepik.com/free-vector/hand-drawn-painted-whitewash-background_23-2151171148.jpg?w=1800&t=st=1720194682~exp=1720195282~hmac=c9382bd8affc1f72f9a7f49b61adc69742abf9c020779cd63cee63767eccef94);
+  background-repeat: no-repeat;
+  background-size: cover;
   width: 100%;
   height: 100%;
   transition: ease-in-out 0.8s;
