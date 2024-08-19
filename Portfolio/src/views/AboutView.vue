@@ -10,11 +10,28 @@
                     <p class="about-page__content__text__heading__two">Maria <b>Durrani</b></p>
 
                 </div>
-                <p class="about-page__content__text__paragraph">
-                    Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem, quia nam eaque deserunt quam
-                    libero, ex quo dolorum aperiam sequi fuga laborum, repellat ipsam iusto praesentium atque id
-                    asperiores perferendis.
-                </p>
+                <div class="about-page__content__text__paragraph">
+                    <p>
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Iusto dicta reprehenderit aliquam
+                        dolor
+                        sunt minus minima ut porro sed ex rem laudantium eos, ratione quos molestiae ullam tempora atque
+                        numquam. Lorem ipsum, dolor sit amet consectetur adipisicing elit. Possimus libero in alias,
+                        fuga
+                        veritatis, nemo error autem, quos rem maxime blanditiis reprehenderit laudantium neque
+                        temporibus?
+                        Ipsa tempore molestiae nulla ipsam.
+                    </p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem amet corporis non incidunt?
+                        Libero sunt dolorem, temporibus autem explicabo deserunt, iure unde natus quod sint ex ullam hic
+                        adipisci mollitia! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore architecto
+                        aut molestiae, itaque explicabo harum! Non sit ipsam omnis, ex doloribus vero commodi tempore
+                        magnam odio dolorem, totam nisi natus.</p>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Voluptatem amet corporis non incidunt?
+                        Libero sunt dolorem, temporibus autem explicabo deserunt, iure unde natus quod sint ex ullam hic
+                        adipisci mollitia! Lorem, ipsum dolor sit amet consectetur adipisicing elit. Dolore architecto
+                        aut molestiae, itaque explicabo harum! Non sit ipsam omnis, ex doloribus vero commodi tempore
+                        magnam odio dolorem, totam nisi natus.</p>
+                </div>
             </div>
         </div>
     </div>

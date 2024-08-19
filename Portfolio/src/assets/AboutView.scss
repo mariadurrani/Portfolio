@@ -1,40 +1,39 @@
 @import './Variables.scss';
 
 .about-page {
-  &__img__wrapper {
-    position: relative;
-    display: inline-block;
-    z-index: 0;
-
-    &::before {
-      content: '';
-      position: absolute;
-      // Change the shape
-      background: #c8daee;
-      clip-path: circle(50%);
-      top: 50%;
-      left: 50%;
-      transform: translate(-50%, -50%);
-      height: 16rem;
-      width: 16rem;
-      z-index: -1;
-    }
-  }
-
   &__content {
     display: flex;
     flex-direction: column;
-    justify-content: center;
     align-items: center;
-    height: 100vh;
     text-align: center;
     margin-bottom: 20px;
+    margin-top: 8rem;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      margin-top: 4rem;
+    }
+
+    @media (min-width: 1025px) {
+      flex-direction: row;
+      text-align: start;
+      justify-content: center;
+      align-items: center;
+      margin: 2rem 4rem;
+    }
 
     &__img {
       margin-top: 2rem;
-      width: 21rem;
-      z-index: 200;
+      width: 18rem;
+      z-index: 100;
       border-radius: 100%;
+
+      @media (min-width: 768px) and (max-width: 1024px) {
+        width: 22rem;
+      }
+
+      @media (min-width: 1025px) {
+        width: 26rem;
+      }
     }
 
     &__text {
@@ -42,19 +41,47 @@
       flex-direction: column;
       justify-content: center;
       align-items: center;
+      margin-top: 4rem;
+
+      @media (min-width: 1025px) {
+        align-items: start;
+        margin-left: 5rem;
+      }
 
       &__heading {
         margin-bottom: 20px;
+
+        @media (min-width: 1025px) {
+          margin-bottom: 3rem;
+        }
 
         &__one {
           font-size: 25px;
           font-weight: 200;
           text-transform: uppercase;
+          transition: ease-in-out 0.8s;
+
+          @media (min-width: 768px) and (max-width: 1024px) {
+            font-size: 30px;
+          }
+
+          @media (min-width: 1025px) {
+            font-size: 2rem;
+          }
         }
 
         &__two {
           text-transform: uppercase;
           font-size: 2rem;
+          transition: ease-in-out 0.8s;
+
+          @media (min-width: 768px) and (max-width: 1024px) {
+            font-size: 40px;
+          }
+
+          @media (min-width: 1025px) {
+            font-size: 3rem;
+          }
         }
 
         &__one,
@@ -65,19 +92,57 @@
 
       &__paragraph {
         width: 90%;
+        transition: ease-in-out 0.8s;
+
+        @media (min-width: 768px) {
+          font-size: 18px;
+        }
+
+        @media (min-width: 1025px) {
+          width: 100%;
+        }
       }
+    }
+  }
+  &__img__wrapper {
+    display: flex;
+    /* CIRCLE SIZE */
+    width: 14rem;
+    height: 14rem;
+    background-color: rgb(233, 227, 220);
+    border-radius: 50%;
+    justify-content: center;
+    align-items: center;
+    border: 5px solid #ffffff;
+
+    @media (min-width: 768px) and (max-width: 1024px) {
+      width: 17rem;
+      height: 17rem;
+    }
+
+    @media (min-width: 1025px) {
+      width: 20rem;
+      height: 20rem;
     }
   }
 }
 
 .dark {
-  .home-page {
-    &__introduction {
-      color: $color-white;
-    }
-
-    &__career {
-      color: $color-white;
+  .about-page {
+    &__content {
+      &__text {
+        &__paragraph {
+          color: rgb(210, 209, 209);
+        }
+        &__heading {
+          &__one {
+            color: rgb(205, 201, 201);
+          }
+          &__two {
+            color: $color-white;
+          }
+        }
+      }
     }
   }
 }
