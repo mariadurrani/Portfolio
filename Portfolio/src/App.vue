@@ -2,22 +2,15 @@
     <Wrapper>
         <header>
             <div class="router-wrapper">
-                <button @click="isMenuShown = !isMenuShown" class="menu-button__container">
-                    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 448 512" class="menu-button__container__item">
-                        <path v-if="!isMenuShown"
-                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
-                        <path v-else="isMenuShown"
-                            d="M0 96C0 78.3 14.3 64 32 64H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32C14.3 128 0 113.7 0 96zM0 256c0-17.7 14.3-32 32-32H416c17.7 0 32 14.3 32 32s-14.3 32-32 32H32c-17.7 0-32-14.3-32-32zM448 416c0 17.7-14.3 32-32 32H32c-17.7 0-32-14.3-32-32s14.3-32 32-32H416c17.7 0 32 14.3 32 32z" />
-                    </svg>
-                </button>
-
-                <nav>
+                <div class="mobile__navigation">
+                    <span class="mobile__menu-button" @click="openNav">&#9776;</span>
                     <RouterLinkNav />
-                </nav>
+                </div>
             </div>
         </header>
 
-        <nav v-if="isMenuShown" class="menu__mobile__opened">
+        <nav id="mobileNav" class="overlay">
+            <a href="javascript:void(0)" class="closebtn" @click="closeNav">&times;</a>
             <RouterLinkMenu />
         </nav>
         <RouterView />
@@ -27,12 +20,18 @@
 <style src="./assets/App.scss"></style>
 
 <script setup lang="ts">
-import { ref } from 'vue';
 import { RouterView } from 'vue-router'
 import RouterLinkNav from './components/RouterLinkNav.vue';
 import RouterLinkMenu from './components/RouterLinkMenu.vue';
-import Wrapper from "../src/components/Wrapper.vue";
+import Wrapper from './components/Wrapper.vue';
+
+function openNav() {
+    document.getElementById("mobileNav")!.style.width = "90%";
+}
+
+function closeNav() {
+    document.getElementById("mobileNav")!.style.width = "0%";
+}
 
 
-const isMenuShown = ref(false)
 </script>

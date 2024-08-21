@@ -32,7 +32,13 @@
                         aut molestiae, itaque explicabo harum! Non sit ipsam omnis, ex doloribus vero commodi tempore
                         magnam odio dolorem, totam nisi natus.</p>
                 </div>
+
+                <div class="about-page__content__cv-button">
+                    <a href="">My CV</a>
+                </div>
             </div>
+
+
         </div>
     </div>
 </template>
@@ -40,4 +46,13 @@
 <style src="../assets/AboutView.scss"></style>
 
 <script>
+export default {
+    mounted() {
+        const about = document.querySelector(".about-page__content__text__paragraph");
+
+        about?.addEventListener("click", e => {
+            console.log(e);
+        });
+    }
+}
 </script>

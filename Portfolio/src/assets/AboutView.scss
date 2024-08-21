@@ -7,7 +7,7 @@
     align-items: center;
     text-align: center;
     margin-bottom: 20px;
-    margin-top: 8rem;
+    margin-top: 4rem;
 
     @media (min-width: 768px) and (max-width: 1024px) {
       margin-top: 4rem;
@@ -46,14 +46,11 @@
       @media (min-width: 1025px) {
         align-items: start;
         margin-left: 5rem;
+        margin-top: 2rem;
       }
 
       &__heading {
         margin-bottom: 20px;
-
-        @media (min-width: 1025px) {
-          margin-bottom: 3rem;
-        }
 
         &__one {
           font-size: 25px;
@@ -102,11 +99,24 @@
           width: 100%;
         }
       }
+
+      &__cv-button,
+      a {
+        display: flex;
+        font-size: 20px;
+        text-decoration: none;
+        padding: 20px 50px;
+        background-color: #8c97c5;
+        color: white;
+        font-weight: 600;
+        border-radius: 15px;
+        margin-top: 20px;
+      }
     }
   }
+
   &__img__wrapper {
     display: flex;
-    /* CIRCLE SIZE */
     width: 14rem;
     height: 14rem;
     background-color: rgb(233, 227, 220);

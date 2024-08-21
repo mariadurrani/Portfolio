@@ -20,7 +20,7 @@ const projects = [
         <div class="work-page__projects-container">
             <ul class="work-page__projects-container__projects">
                 <li v-for="project in projects" :key="project.id" className="work-page__project">
-                    <span class="work-page__project__project-label">{{ project.label }}</span>
+                    <a href="" class="work-page__project__project-label">{{ project.label }}</a>
                     <span class="work-page__project__project-text">{{ "-" + " " + project.text }}</span>
                 </li>
             </ul>

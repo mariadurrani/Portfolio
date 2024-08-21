@@ -6,6 +6,7 @@
             <RouterLinkListItem to="/work" className="navbar-link" text="Work" />
             <RouterLinkListItem to="/about" className="navbar-link" text="About" />
             <RouterLinkListItem to="/contact" className="navbar-link" text="Contact" />
+
         </ul>
     </div>
 </template>

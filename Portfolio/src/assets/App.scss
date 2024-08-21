@@ -5,48 +5,48 @@ body {
   margin: 0;
 }
 
-.menu-button {
-  &__container {
-    display: flex;
-    flex-direction: column;
+.mobile {
+  &__navigation {
     background-color: white;
-    border: none;
+    display: flex;
+    font-size: 40px;
+    padding: 1rem;
     position: fixed;
-    z-index: 1000;
-    padding: 4% 7% 3% 88%;
+
+    @media (min-width: 768px) {
+      display: block;
+      padding: 2px;
+      width: 100%;
+    }
+  }
+  &__menu-button {
+    margin-top: 10px;
 
     @media (min-width: 768px) {
       display: none;
     }
-
-    &__item {
-      display: flex;
-      width: $base-width * 2;
-      height: 3rem;
-
-      @media (min-width: 768px) {
-        display: none;
-      }
-    }
   }
 }
 
-.menu__mobile__opened {
-  display: block;
-  text-transform: uppercase;
-  background: linear-gradient(#f7f7f7, #f3bc88);
-  color: $color-black;
-  margin: 0;
-  position: fixed;
-  width: 100%;
+.overlay {
   height: 100%;
+  width: 0;
+  position: fixed;
+  z-index: 300;
   top: 0;
   left: 0;
-  right: 0;
-  bottom: 0;
-  z-index: 200;
+  background-color: white;
+  overflow-x: hidden;
+  transition: 0.5s;
+  color: black;
+  box-shadow: 0 0 10px #85888c;
+}
 
-  @media (min-width: 768px) {
-    display: none;
-  }
+.overlay .closebtn {
+  position: absolute;
+  left: 20px;
+  font-size: 90px;
+  text-decoration: none;
+  color: black;
+  font-weight: 100;
 }
