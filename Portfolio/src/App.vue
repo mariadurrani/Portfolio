@@ -2,7 +2,7 @@
     <Wrapper>
         <header>
             <div class="router-wrapper">
-                <div class="mobile__navigation">
+                <div class="mobile__navigation" id="navBar">
                     <span class="mobile__menu-button" @click="openNav">&#9776;</span>
                     <RouterLinkNav />
                 </div>
@@ -33,5 +33,9 @@ function closeNav() {
     document.getElementById("mobileNav")!.style.width = "0%";
 }
 
+const body = document.body;
+let lastScroll = 0;
+
+window.addEventListener
 
 </script>
