@@ -25,14 +25,13 @@
       margin-top: 2rem;
       width: 18rem;
       z-index: 100;
-      border-radius: 100%;
 
       @media (min-width: 768px) and (max-width: 1024px) {
         width: 22rem;
       }
 
       @media (min-width: 1025px) {
-        width: 26rem;
+        width: 20rem;
       }
     }
 
@@ -112,27 +111,6 @@
         border-radius: 15px;
         margin-top: 20px;
       }
-    }
-  }
-
-  &__img__wrapper {
-    display: flex;
-    width: 14rem;
-    height: 14rem;
-    background-color: rgb(233, 227, 220);
-    border-radius: 50%;
-    justify-content: center;
-    align-items: center;
-    border: 5px solid #ffffff;
-
-    @media (min-width: 768px) and (max-width: 1024px) {
-      width: 17rem;
-      height: 17rem;
-    }
-
-    @media (min-width: 1025px) {
-      width: 20rem;
-      height: 20rem;
     }
   }
 }
