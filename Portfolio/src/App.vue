@@ -1,9 +1,9 @@
 <template>
     <Wrapper>
         <header>
-            <div class="router-wrapper">
-                <div class="mobile__navigation" id="navBar">
-                    <span class="mobile__menu-button" @click="openNav">&#9776;</span>
+            <div class="navigation">
+                <div class="navigation__desktop" id="navBar">
+                    <span class="navigation__mobile__menu-button" @click="openNav">&#9776;</span>
                     <RouterLinkNav />
                 </div>
             </div>

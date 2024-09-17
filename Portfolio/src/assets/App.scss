@@ -5,9 +5,8 @@ body {
   margin: 0;
 }
 
-.mobile {
-  &__navigation {
-    background-color: white;
+.navigation {
+  &__desktop {
     display: flex;
     font-size: 40px;
     padding: 1rem;
@@ -19,7 +18,7 @@ body {
       width: 100%;
     }
   }
-  &__menu-button {
+  &__mobile__menu-button {
     margin-top: 10px;
 
     @media (min-width: 768px) {

@@ -1,7 +1,7 @@
 <template>
     <div :class="['main-wrapper', { dark: isDarkMode }]">
-        <button @click="toggleDarkMode" class="toggle-dark-button">
-        </button>
+        <div @click="toggleDarkMode" class="toggle-dark-button">
+        </div>
         <slot></slot>
     </div>
 </template>
